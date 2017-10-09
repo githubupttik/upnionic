@@ -20802,7 +20802,7 @@ ion-title {
 
 .toolbar-title {
   display: block;
-  overflow: hidden;
+  /*overflow: hidden;*/
   width: 100%;
   text-overflow: ellipsis;
   white-space: nowrap;
