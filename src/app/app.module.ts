@@ -6,6 +6,8 @@ import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
 import { ListPage } from '../pages/list/list';
 import { AboutPage } from '../pages/about/about';
+import { BelanegaraPage } from '../pages/belanegara/belanegara';
+import { HymnemarsPage } from '../pages/hymnemars/hymnemars';
 import { TabsAboutPage } from '../pages/tabsabout/tabsabout';
 
 import { StatusBar } from '@ionic-native/status-bar';
@@ -21,6 +23,8 @@ import { ParallaxHeader } from '../directives/parallax-header/parallax-header';
     ListPage,
     AboutPage,
     TabsAboutPage,
+    BelanegaraPage,
+    HymnemarsPage,    
     ParallaxHeader  
     ],
   imports: [
@@ -33,6 +37,8 @@ import { ParallaxHeader } from '../directives/parallax-header/parallax-header';
     HomePage,
     ListPage,
     AboutPage,
+    BelanegaraPage,
+    HymnemarsPage,
     TabsAboutPage
   ],
   providers: [

@@ -25683,7 +25683,17 @@ ion-navbar.toolbar {
 }
 
 .header-image {
-  background-image: url(http://www.upnjatim.ac.id/en/images/gambar/adwfdew.png);
+  background-image: url("http://www.upnjatim.ac.id/en/images/gambar/adwfdew.png");
+  height: 200px;
+  width: 100%;
+}
+
+.main-content {
+  padding: 20px;
+  background-color: white;
+}
+
+.header-image {
   height: 200px;
   width: 100%;
 }
@@ -25700,6 +25710,11 @@ ion-navbar.toolbar {
 }
 
 .slide-zoom {
+  height: 200px;
+  width: 100%;
+}
+
+.video-size {
   height: 200px;
   width: 100%;
 }
