@@ -11,6 +11,8 @@ import { TabsAboutPage } from '../pages/tabsabout/tabsabout';
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 import { InAppBrowser } from '@ionic-native/in-app-browser';
+import { ParallaxHeader } from '../directives/parallax-header/parallax-header';
+
 
 @NgModule({
   declarations: [
@@ -18,8 +20,9 @@ import { InAppBrowser } from '@ionic-native/in-app-browser';
     HomePage,
     ListPage,
     AboutPage,
-    TabsAboutPage
-  ],
+    TabsAboutPage,
+    ParallaxHeader  
+    ],
   imports: [
     BrowserModule,
     IonicModule.forRoot(MyApp),
