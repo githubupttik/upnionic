@@ -25512,6 +25512,12 @@ ion-navbar.toolbar {
   min-height: calc(46px + constant(safe-area-inset-top));
 }
 
+.img-size1 {
+  width: 100%;
+  height: auto;
+  left: calc(-50vw + 50%);
+}
+
 .img-size {
   width: 100vw !important;
   height: 100vw !important;
