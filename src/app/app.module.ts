@@ -9,6 +9,7 @@ import { AboutPage } from '../pages/about/about';
 import { BelanegaraPage } from '../pages/belanegara/belanegara';
 import { HymnemarsPage } from '../pages/hymnemars/hymnemars';
 import { TabsAboutPage } from '../pages/tabsabout/tabsabout';
+import { TabsAkademikPage } from '../pages/tabsakademik/tabsakademik';
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
@@ -23,6 +24,7 @@ import { ParallaxHeader } from '../directives/parallax-header/parallax-header';
     ListPage,
     AboutPage,
     TabsAboutPage,
+    TabsAkademikPage,
     BelanegaraPage,
     HymnemarsPage,    
     ParallaxHeader  
@@ -39,7 +41,8 @@ import { ParallaxHeader } from '../directives/parallax-header/parallax-header';
     AboutPage,
     BelanegaraPage,
     HymnemarsPage,
-    TabsAboutPage
+    TabsAboutPage,
+    TabsAkademikPage
   ],
   providers: [
     StatusBar,
