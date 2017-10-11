@@ -1,0 +1,66 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Fakultas & Prodi</ion-title>
+  </ion-navbar>
+</ion-header>
+<ion-content parallax-header>
+ 
+  <div class="header-image"></div>
+ 
+  <div class="main-content">
+ 
+<h2></h2>
+ 
+<ion-list class="accordion-list">
+    <!-- First Level -->
+    <ion-list-header *ngFor="let item of information; let i = index" no-lines no-padding>
+      <!-- Toggle Button -->
+      <button ion-item (click)="toggleSection(i)" detail-none [ngClass]="{'section-active': item.open, 'section': !item.open}">
+        <ion-icon item-left name="arrow-dropright" *ngIf="!item.open"></ion-icon>
+        <ion-icon item-left name="arrow-dropdown-circle" *ngIf="item.open"></ion-icon>
+          {{ item.name }} 
+      </button>
+      
+ <p><ion-icon item-left name="" ></ion-icon><button ion-button outline item-end (click)="visitLink(item.web)">{{ item.web }}</button></p>
+ 
+      <ion-list *ngIf="item.children && item.open" no-lines>
+        <!-- Second Level -->
+        <ion-list-header *ngFor="let child of item.children; let j = index" no-padding>
+          <!-- Toggle Button -->
+          <button ion-item (click)="toggleItem(i, j)" *ngIf="child.children" class="child" detail-none>
+            <ion-icon item-left name="add" *ngIf="!child.open"></ion-icon>
+            <ion-icon item-left name="close" *ngIf="child.open"></ion-icon>
+            {{ child.name }}
+          </button>
+ 
+          <!-- Direct Add Button as Fallback -->
+          <ion-item *ngIf="!child.children" ion-item detail-none class="child-item" text-wrap>
+            <h2>{{ child.name }}</h2>
+            <p text-lowercase>{{ child.information }}</p>
+            <p><button ion-button outline item-end (click)="visitLink(child.web)">{{ child.web }}</button></p>
+          </ion-item>
+ 
+          <ion-list *ngIf="child.children && child.open">
+            <!-- Third Level -->
+            <ion-item *ngFor="let item of child.children; let k = index" detail-none class="child-item" text-wrap>
+              <h2>{{ item.name }}</h2>
+              <p text-lowercase>{{ item.information }}</p>
+              <!-- Direct Add Button -->
+             <p><button ion-button outline item-end (click)="visitLink(item.web)">{{ item.web }}</button></p>
+              
+            </ion-item>
+          </ion-list>
+ 
+        </ion-list-header>
+      </ion-list>
+      
+    </ion-list-header>
+  </ion-list>
+  
+  </div>
+ 
+ 
+</ion-content>

@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 
-import { BelanegaraPage } from '../belanegara/belanegara';
+import { FakultasprodiPage } from '../fakultasprodi/fakultasprodi';;
 import { HymnemarsPage } from '../hymnemars/hymnemars';
 import { AboutPage } from '../about/about';
 
@@ -12,8 +12,8 @@ import { AboutPage } from '../about/about';
 })
 export class TabsAkademikPage {
 
-  tab4Root: any = AboutPage;
-  tab5Root: any = BelanegaraPage;
+  tab4Root: any = FakultasprodiPage;
+  tab5Root: any = AboutPage;
   tab6Root: any = HymnemarsPage;
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {

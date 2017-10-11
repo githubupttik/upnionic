@@ -1,13 +1,16 @@
-webpackJsonp([4],{
+webpackJsonp([6],{
 
-/***/ 101:
+/***/ 103:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AboutPage; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return FakultasprodiPage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(21);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ionic_native_in_app_browser__ = __webpack_require__(77);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(15);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_http__ = __webpack_require__(277);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_rxjs_add_operator_map__ = __webpack_require__(278);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_rxjs_add_operator_map___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_rxjs_add_operator_map__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__ionic_native_in_app_browser__ = __webpack_require__(79);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -20,39 +23,51 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 
 
 
-var AboutPage = (function () {
-    function AboutPage(navCtrl, navParams, iab) {
+
+
+var FakultasprodiPage = (function () {
+    function FakultasprodiPage(navCtrl, navParams, http, iab) {
+        var _this = this;
         this.navCtrl = navCtrl;
         this.navParams = navParams;
+        this.http = http;
         this.iab = iab;
+        var localData = http.get('assets/information.json').map(function (res) { return res.json().items; });
+        localData.subscribe(function (data) {
+            _this.information = data;
+        });
     }
-    AboutPage.prototype.ionViewDidLoad = function () {
-        console.log('ionViewDidLoad AboutPage');
+    FakultasprodiPage.prototype.toggleSection = function (i) {
+        this.information[i].open = !this.information[i].open;
     };
-    AboutPage.prototype.downloadLogo = function () {
-        var browser = this.iab.create('http://elearning.upnjatim.ac.id/main/default_course_document/images/Logo_Upn_Jatim_Baru.png');
+    FakultasprodiPage.prototype.toggleItem = function (i, j) {
+        this.information[i].children[j].open = !this.information[i].children[j].open;
+    };
+    FakultasprodiPage.prototype.visitLink = function (url) {
+        var browser = this.iab.create("http:/" && url, "_system", "location=true");
         browser.close();
     };
-    return AboutPage;
+    return FakultasprodiPage;
 }());
-AboutPage = __decorate([
+FakultasprodiPage = __decorate([
     Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
-        selector: 'page-about',template:/*ion-inline-start:"/home/puskom/upnionic/src/pages/about/about.html"*/'<ion-header>\n  <ion-navbar>\n    <button ion-button menuToggle>\n      <ion-icon name="menu"></ion-icon>\n    </button>\n    <ion-title>Profil</ion-title>\n  </ion-navbar>\n</ion-header>\n\n<ion-content parallax-header>\n \n  <div class="header-image"></div>\n \n  <div class="main-content">\n \n<h2>Sejarah Singkat</h2>\n \n<ol start="1">\n<li style="text-align: justify; line-height: normal;"><span style="font-size: 10pt; font-family: \'Tahoma\',\'sans-serif\';">Periode 1959 - 1965 bernama Akademi Administrasi Perusahaan Veteran Cabang Surabaya.</span></li>\n<li style="text-align: justify; line-height: normal;"><span style="font-size: 10pt; font-family: \'Tahoma\',\'sans-serif\';">Pada tahun 1968 berubah nama menjadi Perguruan Tinggi Pembangunan Nasional (PTPN) Veteran Cabang Jawa Timur.</span></li>\n<li style="text-align: justify; line-height: normal;"><span style="font-size: 10pt; font-family: \'Tahoma\',\'sans-serif\';">Periode 1976 - 1994 terjadi peralihan status PTPN Veteran Cabang Jawa Timur sebagai Perguruan Tinggi Kedinasan di bawah pembinaan Departemen Pertahanan Keamanan RI.</span></li>\n<li style="text-align: justify; line-height: normal;"><span style="font-size: 10pt; font-family: \'Tahoma\',\'sans-serif\';">Pada tahun 1977 berubah nama menjadi Universitas Pembangunan Nasional Veteran Cabang Jawa Timur.</span></li>\n<li style="text-align: justify; line-height: normal;"><span style="font-size: 10pt; font-family: \'Tahoma\',\'sans-serif\';">Pada tahun 1995 berubah menjadi Perguruan Tinggi Swasta dengan nama UPN Veteran Jawa Timur yang secara operasional di bawah pembinaan Yayasan Kejuangan Panglima Besar Sudirman dan secara fungsional di bawah pembinaan Departemen Pertahanan dan Keamanan RI.</span></li>\n<li style="text-align: justify; line-height: normal;"><span style="font-size: 10pt; font-family: \'Tahoma\',\'sans-serif\';">Pada tahun 2007 UPN Veteran secara operasional di bawah pembinaan Yayasan Kesejahteraan Pendidikan dan Perumahan yang secara fungsional di bawah pembinaan <span style="color: windowtext;">Kementrian Pertahanan R</span><span style="color: windowtext;">I</span>.</span></li>\n<li style="text-align: justify; line-height: normal;"><span style="font-size: 10pt; font-family: \'Tahoma\',\'sans-serif\';">Sesuai dengan perkembangan dan kemajuan yang telah diraih, maka UPN Veteran Jawa Timur diproyeksikan oleh Kementrian Pertahanan untuk menjadi Perguruang Tinggi Negeri (PTN).</span></li>\n<li style="text-align: justify; line-height: normal;"><span style="font-family: georgia,palatino; font-size: 10pt; line-height: 16.2px;"><span style="font-family: tahoma,arial,helvetica,sans-serif;">Senin 6 Oktober 2014, Presiden RI Susilo Bambang Yudhoyono, menandatangani prasasti yang menandai pengesahan UPN “Veteran” Jawa Timur menjadi PTN.</span> <br></span><span style="font-size: 10pt; font-family: \'Tahoma\',\'sans-serif\';"></span></li>\n</ol>\n \n<h2>Visi</h2>\n<p style="margin-bottom: 0.0001pt; text-align: justify; line-height: normal;"><span style="font-size: 10pt; font-family: tahoma,arial,helvetica,sans-serif;"><strong><span style="line-height: 107%;">“MENJADI UNIVERSITAS UNGGUL BERKARAKTER BELA NEGARA</span></strong>"</span></p>\n<p style="margin-bottom: 0.0001pt; text-align: justify; line-height: normal;">&nbsp;</p>\n\n<h2>Misi</h2>\n<ol>\n<li><span style="font-family: tahoma,arial,helvetica,sans-serif; font-size: 10pt;">Menyelenggarakan dan mengembangkan pendidikan berkarakter bela negara;</span></li>\n<li><span style="font-family: tahoma,arial,helvetica,sans-serif; font-size: 10pt;">Meningkatkan budaya riset dalam pengembangan bidang IPTEK yang berdayaguna untuk kesejahteraan masyarakat;</span></li>\n<li><span style="font-family: tahoma,arial,helvetica,sans-serif; font-size: 10pt;">Menyelenggarakan pengabdian kepada masyarakat&nbsp; berbasis riset dan kearifan lokal;</span></li>\n<li><span style="font-family: tahoma,arial,helvetica,sans-serif; font-size: 10pt;">Menyelenggarakan tata kelola yang baik dan bersih dalam rangka mencapai akuntabilitas pengelolaan anggaran;</span></li>\n<li><span style="font-family: tahoma,arial,helvetica,sans-serif; font-size: 10pt;">Mengembangkankualitas sumber daya manusia unggul dalam sikap dan tata nilai, unjuk kerja, penguasaan pengetahuan, dan manajerial;</span></li>\n<li><span style="font-family: tahoma,arial,helvetica,sans-serif; font-size: 10pt;">Meningkatkan sistem pengelolaan sarana dan prasarana terpadu;</span></li>\n<li><span style="font-family: tahoma,arial,helvetica,sans-serif; font-size: 10pt;"><span style="line-height: 107%;">Meningkatkan kerjasama institusional dengan <em>stakeholder</em>s baik dalam dan luar negeri.</span></span></li>\n</ol>\n\n<h2>Tujuan</h2>\n<ol>\n<li><span style="font-family: tahoma,arial,helvetica,sans-serif; font-size: 10pt;">Terimplementasinya kurikulum dan layanan pendidikan yang relevan dengan Kerangka Kualifikasi Nasional Indonesia (KKNI) berbasis bela negara;</span></li>\n<li><span style="font-family: tahoma,arial,helvetica,sans-serif; font-size: 10pt;">Tercapainya mutu dan inovasi riset yang berdayaguna untuk peningkatan kesejahteraan masyarakat;</span></li>\n<li><span style="font-family: tahoma,arial,helvetica,sans-serif; font-size: 10pt;">Terwujudnya kegiatan pengabdian kepada masyarakat yang berbasis riset dan kearifan lokal; </span></li>\n<li><span style="font-family: tahoma,arial,helvetica,sans-serif; font-size: 10pt;">Terwujudnya penyelenggaraan tata kelola yang baik dan bersih untuk mencapai akuntabilitas pengelolaan anggaran;</span></li>\n<li><span style="font-family: tahoma,arial,helvetica,sans-serif; font-size: 10pt;">Terwujudnya sumber daya manusia unggul yang kompeten dan berdaya saing tinggi; </span></li>\n<li><span style="font-family: tahoma,arial,helvetica,sans-serif; font-size: 10pt;">Terwujudnya sarana prasarana yang memadai dengan pengelolaan yang efektif dan efisien;</span></li>\n<li><span style="font-size: 10pt; line-height: 107%; font-family: tahoma,arial,helvetica,sans-serif;">Terwujudnya kerjasama institusional dengan <em>stakeholder</em> baik dalam dan luar negeri yang intensif dan menguntungkan kedua belah pihak.</span></li>\n</ol>\n\n<h2>Logo</h2>\n<img src="http://elearning.upnjatim.ac.id/main/default_course_document/images/Logo_Upn_Jatim_Baru.png">\n<button ion-button full color="danger" (click)="downloadLogo()" >Download</button>\n  </div>\n \n \n</ion-content>\n\n'/*ion-inline-end:"/home/puskom/upnionic/src/pages/about/about.html"*/,
+        selector: 'page-fakultasprodi',template:/*ion-inline-start:"/home/puskom/upnionic/src/pages/fakultasprodi/fakultasprodi.html"*/'<ion-header>\n  <ion-navbar>\n    <button ion-button menuToggle>\n      <ion-icon name="menu"></ion-icon>\n    </button>\n    <ion-title>Fakultas & Prodi</ion-title>\n  </ion-navbar>\n</ion-header>\n<ion-content parallax-header>\n \n  <div class="header-image"></div>\n \n  <div class="main-content">\n \n<h2></h2>\n \n<ion-list class="accordion-list">\n    <!-- First Level -->\n    <ion-list-header *ngFor="let item of information; let i = index" no-lines no-padding>\n      <!-- Toggle Button -->\n      <button ion-item (click)="toggleSection(i)" detail-none [ngClass]="{\'section-active\': item.open, \'section\': !item.open}">\n        <ion-icon item-left name="arrow-dropright" *ngIf="!item.open"></ion-icon>\n        <ion-icon item-left name="arrow-dropdown-circle" *ngIf="item.open"></ion-icon>\n          {{ item.name }} \n      </button>\n      \n <p><ion-icon item-left name="" ></ion-icon><button ion-button outline item-end (click)="visitLink(item.web)">{{ item.web }}</button></p>\n \n      <ion-list *ngIf="item.children && item.open" no-lines>\n        <!-- Second Level -->\n        <ion-list-header *ngFor="let child of item.children; let j = index" no-padding>\n          <!-- Toggle Button -->\n          <button ion-item (click)="toggleItem(i, j)" *ngIf="child.children" class="child" detail-none>\n            <ion-icon item-left name="add" *ngIf="!child.open"></ion-icon>\n            <ion-icon item-left name="close" *ngIf="child.open"></ion-icon>\n            {{ child.name }}\n          </button>\n \n          <!-- Direct Add Button as Fallback -->\n          <ion-item *ngIf="!child.children" ion-item detail-none class="child-item" text-wrap>\n            <h2>{{ child.name }}</h2>\n            <p text-lowercase>{{ child.information }}</p>\n            <p><button ion-button outline item-end (click)="visitLink(child.web)">{{ child.web }}</button></p>\n          </ion-item>\n \n          <ion-list *ngIf="child.children && child.open">\n            <!-- Third Level -->\n            <ion-item *ngFor="let item of child.children; let k = index" detail-none class="child-item" text-wrap>\n              <h2>{{ item.name }}</h2>\n              <p text-lowercase>{{ item.information }}</p>\n              <!-- Direct Add Button -->\n             <p><button ion-button outline item-end (click)="visitLink(item.web)">{{ item.web }}</button></p>\n              \n            </ion-item>\n          </ion-list>\n \n        </ion-list-header>\n      </ion-list>\n      \n    </ion-list-header>\n  </ion-list>\n  \n  </div>\n \n \n</ion-content>\n'/*ion-inline-end:"/home/puskom/upnionic/src/pages/fakultasprodi/fakultasprodi.html"*/,
     }),
-    __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavParams */], __WEBPACK_IMPORTED_MODULE_2__ionic_native_in_app_browser__["a" /* InAppBrowser */]])
-], AboutPage);
+    __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavController */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavController */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavParams */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavParams */]) === "function" && _b || Object, typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_2__angular_http__["a" /* Http */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2__angular_http__["a" /* Http */]) === "function" && _c || Object, typeof (_d = typeof __WEBPACK_IMPORTED_MODULE_4__ionic_native_in_app_browser__["a" /* InAppBrowser */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_4__ionic_native_in_app_browser__["a" /* InAppBrowser */]) === "function" && _d || Object])
+], FakultasprodiPage);
 
-//# sourceMappingURL=about.js.map
+var _a, _b, _c, _d;
+//# sourceMappingURL=fakultasprodi.js.map
 
 /***/ }),
 
-/***/ 102:
+/***/ 104:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return BelanegaraPage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(21);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(15);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -85,16 +100,16 @@ BelanegaraPage = __decorate([
 
 /***/ }),
 
-/***/ 103:
+/***/ 105:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return TabsAboutPage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(21);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__belanegara_belanegara__ = __webpack_require__(102);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__hymnemars_hymnemars__ = __webpack_require__(198);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__about_about__ = __webpack_require__(101);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(15);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__belanegara_belanegara__ = __webpack_require__(104);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__hymnemars_hymnemars__ = __webpack_require__(51);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__about_about__ = __webpack_require__(50);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -133,7 +148,56 @@ TabsAboutPage = __decorate([
 
 /***/ }),
 
-/***/ 112:
+/***/ 106:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return TabsAkademikPage; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(15);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__fakultasprodi_fakultasprodi__ = __webpack_require__(103);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__hymnemars_hymnemars__ = __webpack_require__(51);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__about_about__ = __webpack_require__(50);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+
+;
+
+
+var TabsAkademikPage = (function () {
+    function TabsAkademikPage(navCtrl, navParams) {
+        this.navCtrl = navCtrl;
+        this.navParams = navParams;
+        this.tab4Root = __WEBPACK_IMPORTED_MODULE_2__fakultasprodi_fakultasprodi__["a" /* FakultasprodiPage */];
+        this.tab5Root = __WEBPACK_IMPORTED_MODULE_4__about_about__["a" /* AboutPage */];
+        this.tab6Root = __WEBPACK_IMPORTED_MODULE_3__hymnemars_hymnemars__["a" /* HymnemarsPage */];
+    }
+    TabsAkademikPage.prototype.ionViewDidLoad = function () {
+        console.log('ionViewDidLoad TabsAkademikPage');
+    };
+    return TabsAkademikPage;
+}());
+TabsAkademikPage = __decorate([
+    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
+        selector: 'page-tabsakademik',template:/*ion-inline-start:"/home/puskom/upnionic/src/pages/tabsakademik/tabsakademik.html"*/'<ion-tabs>\n\n  <ion-tab [root]="tab4Root" tabTitle="Fakultas & Prodi" tabIcon="cog"></ion-tab>\n  <ion-tab [root]="tab5Root" tabTitle="Kalender Akademik" tabIcon="chatbubbles"></ion-tab>\n  <ion-tab [root]="tab6Root" tabTitle="UPT & Biro" tabIcon="pulse"></ion-tab>\n</ion-tabs>\n'/*ion-inline-end:"/home/puskom/upnionic/src/pages/tabsakademik/tabsakademik.html"*/,
+    }),
+    __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavParams */]])
+], TabsAkademikPage);
+
+//# sourceMappingURL=tabsakademik.js.map
+
+/***/ }),
+
+/***/ 115:
 /***/ (function(module, exports) {
 
 function webpackEmptyAsyncContext(req) {
@@ -146,33 +210,37 @@ function webpackEmptyAsyncContext(req) {
 webpackEmptyAsyncContext.keys = function() { return []; };
 webpackEmptyAsyncContext.resolve = webpackEmptyAsyncContext;
 module.exports = webpackEmptyAsyncContext;
-webpackEmptyAsyncContext.id = 112;
+webpackEmptyAsyncContext.id = 115;
 
 /***/ }),
 
-/***/ 153:
+/***/ 156:
 /***/ (function(module, exports, __webpack_require__) {
 
 var map = {
 	"../pages/about/about.module": [
-		269,
-		10
+		272,
+		5
 	],
 	"../pages/belanegara/belanegara.module": [
-		270,
-		9
+		273,
+		4
+	],
+	"../pages/fakultasprodi/fakultasprodi.module": [
+		271,
+		3
 	],
 	"../pages/hymnemars/hymnemars.module": [
-		271,
-		8
+		275,
+		2
 	],
 	"../pages/tabsabout/tabsabout.module": [
-		272,
-		7
+		274,
+		1
 	],
 	"../pages/tabsakademik/tabsakademik.module": [
-		273,
-		6
+		276,
+		0
 	]
 };
 function webpackAsyncContext(req) {
@@ -186,19 +254,19 @@ function webpackAsyncContext(req) {
 webpackAsyncContext.keys = function webpackAsyncContextKeys() {
 	return Object.keys(map);
 };
-webpackAsyncContext.id = 153;
+webpackAsyncContext.id = 156;
 module.exports = webpackAsyncContext;
 
 /***/ }),
 
-/***/ 196:
+/***/ 199:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return HomePage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(21);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ionic_native_in_app_browser__ = __webpack_require__(77);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(15);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ionic_native_in_app_browser__ = __webpack_require__(79);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -252,13 +320,13 @@ HomePage = __decorate([
 
 /***/ }),
 
-/***/ 197:
+/***/ 200:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ListPage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(21);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(15);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -308,58 +376,13 @@ var ListPage_1;
 
 /***/ }),
 
-/***/ 198:
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return HymnemarsPage; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(21);
-var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-var __metadata = (this && this.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
-
-
-/**
- * Generated class for the HymnemarsPage page.
- *
- * See https://ionicframework.com/docs/components/#navigation for more info on
- * Ionic pages and navigation.
- */
-var HymnemarsPage = (function () {
-    function HymnemarsPage(navCtrl, navParams) {
-        this.navCtrl = navCtrl;
-        this.navParams = navParams;
-    }
-    HymnemarsPage.prototype.ionViewDidLoad = function () {
-        console.log('ionViewDidLoad HymnemarsPage');
-    };
-    return HymnemarsPage;
-}());
-HymnemarsPage = __decorate([
-    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
-        selector: 'page-hymnemars',template:/*ion-inline-start:"/home/puskom/upnionic/src/pages/hymnemars/hymnemars.html"*/'<ion-header>\n  <ion-navbar>\n    <button ion-button menuToggle>\n      <ion-icon name="menu"></ion-icon>\n    </button>\n    <ion-title>Hymne & Mars</ion-title>\n  </ion-navbar>\n</ion-header>\n\n\n<ion-content padding>\n<font style="text-align: center;">\n<h2>HYMNE UPN "VETERAN"</h2>Syair : Ir. Soetomo, SA<br>Lagu : Drs. Joko Sarwoko, MM<br>&nbsp;<br>Dibawah Dwi Warna panji<br>kami Warga Upn "Veteran"<br>Berkiprah untuk negeri<br>Setia pada Pertiwi<br>&nbsp;<br>Penerus perjuangan bangsa<br>Dahulukan dharma dari pada pinta<br>Dengan tekat Widya Mwat Yasa<br>Menuju bangsa nan sejahtera<br>&nbsp;<br>Reff :<br>jati diri nilai kejuangan<br>Disinari wawasan kebangsaan<br>Rela berkorban atas Ridho Tuhan<br>Demi cintaku negeriku<br>&nbsp;<br>Kami t\'lah berjanji<br>Berkati tanpa henti<br>Berkarya sepanjang masa<br>Bagi Indonesia Jaya<br><br>&nbsp;<br><br>&nbsp;<br><h2>MARS UPN "VETERAN"</h2><br>Lagu / Syair : Kusbini Dianto S.<br>Arr. : Ign. Budiyono<br>&nbsp;<br>Mahasiswa UPN VETERAN<br>Bersatu padu bernaung dibawah panji,<br>Menjunjung tinggi sumpah mulia patuh setia pada negara,<br>Semangat tetap menyala berjuang gigih demi cita<br>Menunaikan bakti Negara<br>Bagi Nusa dan Bangsa\n<br><br>&nbsp;<br><br>&nbsp;<br>\n<h2>MARS BELANEGARA</h2></font>\n<iframe class="video-size" width="560" height="315" src="https://www.youtube.com/embed/ZjMICkq8sxg" frameborder="0" allowfullscreen></iframe>\n\n</ion-content>\n'/*ion-inline-end:"/home/puskom/upnionic/src/pages/hymnemars/hymnemars.html"*/,
-    }),
-    __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavParams */]])
-], HymnemarsPage);
-
-//# sourceMappingURL=hymnemars.js.map
-
-/***/ }),
-
-/***/ 199:
+/***/ 201:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__ = __webpack_require__(200);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__app_module__ = __webpack_require__(218);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__ = __webpack_require__(202);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__app_module__ = __webpack_require__(220);
 
 
 Object(__WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__["a" /* platformBrowserDynamic */])().bootstrapModule(__WEBPACK_IMPORTED_MODULE_1__app_module__["a" /* AppModule */]);
@@ -367,32 +390,36 @@ Object(__WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__["a" /* pl
 
 /***/ }),
 
-/***/ 218:
+/***/ 220:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AppModule; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser__ = __webpack_require__(30);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_ionic_angular__ = __webpack_require__(21);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__app_component__ = __webpack_require__(267);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__pages_home_home__ = __webpack_require__(196);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__pages_list_list__ = __webpack_require__(197);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__pages_about_about__ = __webpack_require__(101);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__pages_belanegara_belanegara__ = __webpack_require__(102);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__pages_hymnemars_hymnemars__ = __webpack_require__(198);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__pages_tabsabout_tabsabout__ = __webpack_require__(103);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__pages_tabsakademik_tabsakademik__ = __webpack_require__(274);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__ionic_native_status_bar__ = __webpack_require__(194);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__ionic_native_splash_screen__ = __webpack_require__(195);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__ionic_native_in_app_browser__ = __webpack_require__(77);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__directives_parallax_header_parallax_header__ = __webpack_require__(268);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_ionic_angular__ = __webpack_require__(15);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__app_component__ = __webpack_require__(269);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__pages_home_home__ = __webpack_require__(199);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__pages_list_list__ = __webpack_require__(200);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__pages_about_about__ = __webpack_require__(50);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__pages_belanegara_belanegara__ = __webpack_require__(104);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__pages_hymnemars_hymnemars__ = __webpack_require__(51);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__pages_fakultasprodi_fakultasprodi__ = __webpack_require__(103);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__pages_tabsabout_tabsabout__ = __webpack_require__(105);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__pages_tabsakademik_tabsakademik__ = __webpack_require__(106);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__ionic_native_status_bar__ = __webpack_require__(197);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__ionic_native_splash_screen__ = __webpack_require__(198);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__ionic_native_in_app_browser__ = __webpack_require__(79);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__directives_parallax_header_parallax_header__ = __webpack_require__(270);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_16__angular_http__ = __webpack_require__(277);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
     else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
+
+
 
 
 
@@ -420,21 +447,24 @@ AppModule = __decorate([
             __WEBPACK_IMPORTED_MODULE_4__pages_home_home__["a" /* HomePage */],
             __WEBPACK_IMPORTED_MODULE_5__pages_list_list__["a" /* ListPage */],
             __WEBPACK_IMPORTED_MODULE_6__pages_about_about__["a" /* AboutPage */],
-            __WEBPACK_IMPORTED_MODULE_9__pages_tabsabout_tabsabout__["a" /* TabsAboutPage */],
-            __WEBPACK_IMPORTED_MODULE_10__pages_tabsakademik_tabsakademik__["a" /* TabsAkademikPage */],
+            __WEBPACK_IMPORTED_MODULE_10__pages_tabsabout_tabsabout__["a" /* TabsAboutPage */],
+            __WEBPACK_IMPORTED_MODULE_11__pages_tabsakademik_tabsakademik__["a" /* TabsAkademikPage */],
             __WEBPACK_IMPORTED_MODULE_7__pages_belanegara_belanegara__["a" /* BelanegaraPage */],
             __WEBPACK_IMPORTED_MODULE_8__pages_hymnemars_hymnemars__["a" /* HymnemarsPage */],
-            __WEBPACK_IMPORTED_MODULE_14__directives_parallax_header_parallax_header__["a" /* ParallaxHeader */]
+            __WEBPACK_IMPORTED_MODULE_9__pages_fakultasprodi_fakultasprodi__["a" /* FakultasprodiPage */],
+            __WEBPACK_IMPORTED_MODULE_15__directives_parallax_header_parallax_header__["a" /* ParallaxHeader */]
         ],
         imports: [
             __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser__["a" /* BrowserModule */],
+            __WEBPACK_IMPORTED_MODULE_16__angular_http__["b" /* HttpModule */],
             __WEBPACK_IMPORTED_MODULE_2_ionic_angular__["c" /* IonicModule */].forRoot(__WEBPACK_IMPORTED_MODULE_3__app_component__["a" /* MyApp */], {}, {
                 links: [
+                    { loadChildren: '../pages/fakultasprodi/fakultasprodi.module#FakultasprodiPageModule', name: 'FakultasprodiPage', segment: 'fakultasprodi', priority: 'low', defaultHistory: [] },
                     { loadChildren: '../pages/about/about.module#AboutPageModule', name: 'AboutPage', segment: 'about', priority: 'low', defaultHistory: [] },
                     { loadChildren: '../pages/belanegara/belanegara.module#BelanegaraPageModule', name: 'BelanegaraPage', segment: 'belanegara', priority: 'low', defaultHistory: [] },
-                    { loadChildren: '../pages/hymnemars/hymnemars.module#HymnemarsPageModule', name: 'HymnemarsPage', segment: 'hymnemars', priority: 'low', defaultHistory: [] },
                     { loadChildren: '../pages/tabsabout/tabsabout.module#TabsAboutPageModule', name: 'TabsAboutPage', segment: 'tabsabout', priority: 'low', defaultHistory: [] },
-                    { loadChildren: '../pages/tabsakademik/tabsakademik.module#TabsakademikPageModule', name: 'TabsAkademikPage', segment: 'tabsakademik', priority: 'low', defaultHistory: [] }
+                    { loadChildren: '../pages/hymnemars/hymnemars.module#HymnemarsPageModule', name: 'HymnemarsPage', segment: 'hymnemars', priority: 'low', defaultHistory: [] },
+                    { loadChildren: '../pages/tabsakademik/tabsakademik.module#TabsAkademikPageModule', name: 'TabsAkademikPage', segment: 'tabsakademik', priority: 'low', defaultHistory: [] }
                 ]
             }),
         ],
@@ -446,13 +476,14 @@ AppModule = __decorate([
             __WEBPACK_IMPORTED_MODULE_6__pages_about_about__["a" /* AboutPage */],
             __WEBPACK_IMPORTED_MODULE_7__pages_belanegara_belanegara__["a" /* BelanegaraPage */],
             __WEBPACK_IMPORTED_MODULE_8__pages_hymnemars_hymnemars__["a" /* HymnemarsPage */],
-            __WEBPACK_IMPORTED_MODULE_9__pages_tabsabout_tabsabout__["a" /* TabsAboutPage */],
-            __WEBPACK_IMPORTED_MODULE_10__pages_tabsakademik_tabsakademik__["a" /* TabsAkademikPage */]
+            __WEBPACK_IMPORTED_MODULE_9__pages_fakultasprodi_fakultasprodi__["a" /* FakultasprodiPage */],
+            __WEBPACK_IMPORTED_MODULE_10__pages_tabsabout_tabsabout__["a" /* TabsAboutPage */],
+            __WEBPACK_IMPORTED_MODULE_11__pages_tabsakademik_tabsakademik__["a" /* TabsAkademikPage */]
         ],
         providers: [
-            __WEBPACK_IMPORTED_MODULE_11__ionic_native_status_bar__["a" /* StatusBar */],
-            __WEBPACK_IMPORTED_MODULE_12__ionic_native_splash_screen__["a" /* SplashScreen */],
-            __WEBPACK_IMPORTED_MODULE_13__ionic_native_in_app_browser__["a" /* InAppBrowser */],
+            __WEBPACK_IMPORTED_MODULE_12__ionic_native_status_bar__["a" /* StatusBar */],
+            __WEBPACK_IMPORTED_MODULE_13__ionic_native_splash_screen__["a" /* SplashScreen */],
+            __WEBPACK_IMPORTED_MODULE_14__ionic_native_in_app_browser__["a" /* InAppBrowser */],
             { provide: __WEBPACK_IMPORTED_MODULE_1__angular_core__["v" /* ErrorHandler */], useClass: __WEBPACK_IMPORTED_MODULE_2_ionic_angular__["b" /* IonicErrorHandler */] }
         ]
     })
@@ -462,19 +493,19 @@ AppModule = __decorate([
 
 /***/ }),
 
-/***/ 267:
+/***/ 269:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return MyApp; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(21);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ionic_native_status_bar__ = __webpack_require__(194);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ionic_native_splash_screen__ = __webpack_require__(195);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__pages_tabsabout_tabsabout__ = __webpack_require__(103);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__pages_tabsakademik_tabsakademik__ = __webpack_require__(274);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__pages_home_home__ = __webpack_require__(196);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__pages_list_list__ = __webpack_require__(197);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(15);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ionic_native_status_bar__ = __webpack_require__(197);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ionic_native_splash_screen__ = __webpack_require__(198);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__pages_tabsabout_tabsabout__ = __webpack_require__(105);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__pages_tabsakademik_tabsakademik__ = __webpack_require__(106);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__pages_home_home__ = __webpack_require__(199);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__pages_list_list__ = __webpack_require__(200);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -526,20 +557,19 @@ var MyApp = (function () {
 }());
 __decorate([
     Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_13" /* ViewChild */])(__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* Nav */]),
-    __metadata("design:type", typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* Nav */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* Nav */]) === "function" && _a || Object)
+    __metadata("design:type", __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* Nav */])
 ], MyApp.prototype, "nav", void 0);
 MyApp = __decorate([
     Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({template:/*ion-inline-start:"/home/puskom/upnionic/src/app/app.html"*/'<ion-menu [content]="content">\n  <ion-header>\n    <ion-toolbar>\n      <ion-title>Menu</ion-title>\n    </ion-toolbar>\n  </ion-header>\n\n  <ion-content>\n    <ion-list>\n      <button menuClose ion-item *ngFor="let p of pages" (click)="openPage(p)">\n        {{p.title}}\n      </button>\n    </ion-list>\n  </ion-content>\n\n</ion-menu>\n\n<!-- Disable swipe-to-go-back because it\'s poor UX to combine STGB with side menus -->\n<ion-nav [root]="rootPage" #content swipeBackEnabled="false"></ion-nav>'/*ion-inline-end:"/home/puskom/upnionic/src/app/app.html"*/
     }),
-    __metadata("design:paramtypes", [typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* Platform */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* Platform */]) === "function" && _b || Object, typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_2__ionic_native_status_bar__["a" /* StatusBar */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2__ionic_native_status_bar__["a" /* StatusBar */]) === "function" && _c || Object, typeof (_d = typeof __WEBPACK_IMPORTED_MODULE_3__ionic_native_splash_screen__["a" /* SplashScreen */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_3__ionic_native_splash_screen__["a" /* SplashScreen */]) === "function" && _d || Object])
+    __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* Platform */], __WEBPACK_IMPORTED_MODULE_2__ionic_native_status_bar__["a" /* StatusBar */], __WEBPACK_IMPORTED_MODULE_3__ionic_native_splash_screen__["a" /* SplashScreen */]])
 ], MyApp);
 
-var _a, _b, _c, _d;
 //# sourceMappingURL=app.component.js.map
 
 /***/ }),
 
-/***/ 268:
+/***/ 270:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -606,16 +636,14 @@ ParallaxHeader = __decorate([
 
 /***/ }),
 
-/***/ 274:
+/***/ 50:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return TabsAkademikPage; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AboutPage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(21);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__belanegara_belanegara__ = __webpack_require__(102);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__hymnemars_hymnemars__ = __webpack_require__(198);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__about_about__ = __webpack_require__(101);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(15);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ionic_native_in_app_browser__ = __webpack_require__(79);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -628,32 +656,76 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 
 
 
-
-
-var TabsAkademikPage = (function () {
-    function TabsAkademikPage(navCtrl, navParams) {
+var AboutPage = (function () {
+    function AboutPage(navCtrl, navParams, iab) {
         this.navCtrl = navCtrl;
         this.navParams = navParams;
-        this.tab4Root = __WEBPACK_IMPORTED_MODULE_4__about_about__["a" /* AboutPage */];
-        this.tab5Root = __WEBPACK_IMPORTED_MODULE_2__belanegara_belanegara__["a" /* BelanegaraPage */];
-        this.tab6Root = __WEBPACK_IMPORTED_MODULE_3__hymnemars_hymnemars__["a" /* HymnemarsPage */];
+        this.iab = iab;
     }
-    TabsAkademikPage.prototype.ionViewDidLoad = function () {
-        console.log('ionViewDidLoad TabsAkademikPage');
+    AboutPage.prototype.ionViewDidLoad = function () {
+        console.log('ionViewDidLoad AboutPage');
     };
-    return TabsAkademikPage;
+    AboutPage.prototype.downloadLogo = function () {
+        var browser = this.iab.create('http://elearning.upnjatim.ac.id/main/default_course_document/images/Logo_Upn_Jatim_Baru.png');
+        browser.close();
+    };
+    return AboutPage;
 }());
-TabsAkademikPage = __decorate([
+AboutPage = __decorate([
     Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
-        selector: 'page-tabsakademik',template:/*ion-inline-start:"/home/puskom/upnionic/src/pages/tabsakademik/tabsakademik.html"*/'<ion-tabs>\n\n  <ion-tab [root]="tab4Root" tabTitle="Fakultas & Prodi" tabIcon="cog"></ion-tab>\n  <ion-tab [root]="tab5Root" tabTitle="Kalender Akademik" tabIcon="chatbubbles"></ion-tab>\n  <ion-tab [root]="tab6Root" tabTitle="UPT & Biro" tabIcon="pulse"></ion-tab>\n</ion-tabs>\n'/*ion-inline-end:"/home/puskom/upnionic/src/pages/tabsakademik/tabsakademik.html"*/,
+        selector: 'page-about',template:/*ion-inline-start:"/home/puskom/upnionic/src/pages/about/about.html"*/'<ion-header>\n  <ion-navbar>\n    <button ion-button menuToggle>\n      <ion-icon name="menu"></ion-icon>\n    </button>\n    <ion-title>Profil</ion-title>\n  </ion-navbar>\n</ion-header>\n\n<ion-content parallax-header>\n \n  <div class="header-image"></div>\n \n  <div class="main-content">\n \n<h2>Sejarah Singkat</h2>\n \n<ol start="1">\n<li style="text-align: justify; line-height: normal;"><span style="font-size: 10pt; font-family: \'Tahoma\',\'sans-serif\';">Periode 1959 - 1965 bernama Akademi Administrasi Perusahaan Veteran Cabang Surabaya.</span></li>\n<li style="text-align: justify; line-height: normal;"><span style="font-size: 10pt; font-family: \'Tahoma\',\'sans-serif\';">Pada tahun 1968 berubah nama menjadi Perguruan Tinggi Pembangunan Nasional (PTPN) Veteran Cabang Jawa Timur.</span></li>\n<li style="text-align: justify; line-height: normal;"><span style="font-size: 10pt; font-family: \'Tahoma\',\'sans-serif\';">Periode 1976 - 1994 terjadi peralihan status PTPN Veteran Cabang Jawa Timur sebagai Perguruan Tinggi Kedinasan di bawah pembinaan Departemen Pertahanan Keamanan RI.</span></li>\n<li style="text-align: justify; line-height: normal;"><span style="font-size: 10pt; font-family: \'Tahoma\',\'sans-serif\';">Pada tahun 1977 berubah nama menjadi Universitas Pembangunan Nasional Veteran Cabang Jawa Timur.</span></li>\n<li style="text-align: justify; line-height: normal;"><span style="font-size: 10pt; font-family: \'Tahoma\',\'sans-serif\';">Pada tahun 1995 berubah menjadi Perguruan Tinggi Swasta dengan nama UPN Veteran Jawa Timur yang secara operasional di bawah pembinaan Yayasan Kejuangan Panglima Besar Sudirman dan secara fungsional di bawah pembinaan Departemen Pertahanan dan Keamanan RI.</span></li>\n<li style="text-align: justify; line-height: normal;"><span style="font-size: 10pt; font-family: \'Tahoma\',\'sans-serif\';">Pada tahun 2007 UPN Veteran secara operasional di bawah pembinaan Yayasan Kesejahteraan Pendidikan dan Perumahan yang secara fungsional di bawah pembinaan <span style="color: windowtext;">Kementrian Pertahanan R</span><span style="color: windowtext;">I</span>.</span></li>\n<li style="text-align: justify; line-height: normal;"><span style="font-size: 10pt; font-family: \'Tahoma\',\'sans-serif\';">Sesuai dengan perkembangan dan kemajuan yang telah diraih, maka UPN Veteran Jawa Timur diproyeksikan oleh Kementrian Pertahanan untuk menjadi Perguruang Tinggi Negeri (PTN).</span></li>\n<li style="text-align: justify; line-height: normal;"><span style="font-family: georgia,palatino; font-size: 10pt; line-height: 16.2px;"><span style="font-family: tahoma,arial,helvetica,sans-serif;">Senin 6 Oktober 2014, Presiden RI Susilo Bambang Yudhoyono, menandatangani prasasti yang menandai pengesahan UPN “Veteran” Jawa Timur menjadi PTN.</span> <br></span><span style="font-size: 10pt; font-family: \'Tahoma\',\'sans-serif\';"></span></li>\n</ol>\n \n<h2>Visi</h2>\n<p style="margin-bottom: 0.0001pt; text-align: justify; line-height: normal;"><span style="font-size: 10pt; font-family: tahoma,arial,helvetica,sans-serif;"><strong><span style="line-height: 107%;">“MENJADI UNIVERSITAS UNGGUL BERKARAKTER BELA NEGARA</span></strong>"</span></p>\n<p style="margin-bottom: 0.0001pt; text-align: justify; line-height: normal;">&nbsp;</p>\n\n<h2>Misi</h2>\n<ol>\n<li><span style="font-family: tahoma,arial,helvetica,sans-serif; font-size: 10pt;">Menyelenggarakan dan mengembangkan pendidikan berkarakter bela negara;</span></li>\n<li><span style="font-family: tahoma,arial,helvetica,sans-serif; font-size: 10pt;">Meningkatkan budaya riset dalam pengembangan bidang IPTEK yang berdayaguna untuk kesejahteraan masyarakat;</span></li>\n<li><span style="font-family: tahoma,arial,helvetica,sans-serif; font-size: 10pt;">Menyelenggarakan pengabdian kepada masyarakat&nbsp; berbasis riset dan kearifan lokal;</span></li>\n<li><span style="font-family: tahoma,arial,helvetica,sans-serif; font-size: 10pt;">Menyelenggarakan tata kelola yang baik dan bersih dalam rangka mencapai akuntabilitas pengelolaan anggaran;</span></li>\n<li><span style="font-family: tahoma,arial,helvetica,sans-serif; font-size: 10pt;">Mengembangkankualitas sumber daya manusia unggul dalam sikap dan tata nilai, unjuk kerja, penguasaan pengetahuan, dan manajerial;</span></li>\n<li><span style="font-family: tahoma,arial,helvetica,sans-serif; font-size: 10pt;">Meningkatkan sistem pengelolaan sarana dan prasarana terpadu;</span></li>\n<li><span style="font-family: tahoma,arial,helvetica,sans-serif; font-size: 10pt;"><span style="line-height: 107%;">Meningkatkan kerjasama institusional dengan <em>stakeholder</em>s baik dalam dan luar negeri.</span></span></li>\n</ol>\n\n<h2>Tujuan</h2>\n<ol>\n<li><span style="font-family: tahoma,arial,helvetica,sans-serif; font-size: 10pt;">Terimplementasinya kurikulum dan layanan pendidikan yang relevan dengan Kerangka Kualifikasi Nasional Indonesia (KKNI) berbasis bela negara;</span></li>\n<li><span style="font-family: tahoma,arial,helvetica,sans-serif; font-size: 10pt;">Tercapainya mutu dan inovasi riset yang berdayaguna untuk peningkatan kesejahteraan masyarakat;</span></li>\n<li><span style="font-family: tahoma,arial,helvetica,sans-serif; font-size: 10pt;">Terwujudnya kegiatan pengabdian kepada masyarakat yang berbasis riset dan kearifan lokal; </span></li>\n<li><span style="font-family: tahoma,arial,helvetica,sans-serif; font-size: 10pt;">Terwujudnya penyelenggaraan tata kelola yang baik dan bersih untuk mencapai akuntabilitas pengelolaan anggaran;</span></li>\n<li><span style="font-family: tahoma,arial,helvetica,sans-serif; font-size: 10pt;">Terwujudnya sumber daya manusia unggul yang kompeten dan berdaya saing tinggi; </span></li>\n<li><span style="font-family: tahoma,arial,helvetica,sans-serif; font-size: 10pt;">Terwujudnya sarana prasarana yang memadai dengan pengelolaan yang efektif dan efisien;</span></li>\n<li><span style="font-size: 10pt; line-height: 107%; font-family: tahoma,arial,helvetica,sans-serif;">Terwujudnya kerjasama institusional dengan <em>stakeholder</em> baik dalam dan luar negeri yang intensif dan menguntungkan kedua belah pihak.</span></li>\n</ol>\n\n<h2>Logo</h2>\n<img src="http://elearning.upnjatim.ac.id/main/default_course_document/images/Logo_Upn_Jatim_Baru.png">\n<button ion-button full color="danger" (click)="downloadLogo()" >Download</button>\n  </div>\n \n \n</ion-content>\n\n'/*ion-inline-end:"/home/puskom/upnionic/src/pages/about/about.html"*/,
     }),
-    __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavController */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavController */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavParams */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavParams */]) === "function" && _b || Object])
-], TabsAkademikPage);
+    __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavParams */], __WEBPACK_IMPORTED_MODULE_2__ionic_native_in_app_browser__["a" /* InAppBrowser */]])
+], AboutPage);
 
-var _a, _b;
-//# sourceMappingURL=tabsakademik.js.map
+//# sourceMappingURL=about.js.map
+
+/***/ }),
+
+/***/ 51:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return HymnemarsPage; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(15);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+/**
+ * Generated class for the HymnemarsPage page.
+ *
+ * See https://ionicframework.com/docs/components/#navigation for more info on
+ * Ionic pages and navigation.
+ */
+var HymnemarsPage = (function () {
+    function HymnemarsPage(navCtrl, navParams) {
+        this.navCtrl = navCtrl;
+        this.navParams = navParams;
+    }
+    HymnemarsPage.prototype.ionViewDidLoad = function () {
+        console.log('ionViewDidLoad HymnemarsPage');
+    };
+    return HymnemarsPage;
+}());
+HymnemarsPage = __decorate([
+    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
+        selector: 'page-hymnemars',template:/*ion-inline-start:"/home/puskom/upnionic/src/pages/hymnemars/hymnemars.html"*/'<ion-header>\n  <ion-navbar>\n    <button ion-button menuToggle>\n      <ion-icon name="menu"></ion-icon>\n    </button>\n    <ion-title>Hymne & Mars</ion-title>\n  </ion-navbar>\n</ion-header>\n\n\n<ion-content padding>\n<font style="text-align: center;">\n<h2>HYMNE UPN "VETERAN"</h2>Syair : Ir. Soetomo, SA<br>Lagu : Drs. Joko Sarwoko, MM<br>&nbsp;<br>Dibawah Dwi Warna panji<br>kami Warga Upn "Veteran"<br>Berkiprah untuk negeri<br>Setia pada Pertiwi<br>&nbsp;<br>Penerus perjuangan bangsa<br>Dahulukan dharma dari pada pinta<br>Dengan tekat Widya Mwat Yasa<br>Menuju bangsa nan sejahtera<br>&nbsp;<br>Reff :<br>jati diri nilai kejuangan<br>Disinari wawasan kebangsaan<br>Rela berkorban atas Ridho Tuhan<br>Demi cintaku negeriku<br>&nbsp;<br>Kami t\'lah berjanji<br>Berkati tanpa henti<br>Berkarya sepanjang masa<br>Bagi Indonesia Jaya<br><br>&nbsp;<br><br>&nbsp;<br><h2>MARS UPN "VETERAN"</h2><br>Lagu / Syair : Kusbini Dianto S.<br>Arr. : Ign. Budiyono<br>&nbsp;<br>Mahasiswa UPN VETERAN<br>Bersatu padu bernaung dibawah panji,<br>Menjunjung tinggi sumpah mulia patuh setia pada negara,<br>Semangat tetap menyala berjuang gigih demi cita<br>Menunaikan bakti Negara<br>Bagi Nusa dan Bangsa\n<br><br>&nbsp;<br><br>&nbsp;<br>\n<h2>MARS BELANEGARA</h2></font>\n<iframe class="video-size" width="560" height="315" src="https://www.youtube.com/embed/ZjMICkq8sxg" frameborder="0" allowfullscreen></iframe>\n\n</ion-content>\n'/*ion-inline-end:"/home/puskom/upnionic/src/pages/hymnemars/hymnemars.html"*/,
+    }),
+    __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavParams */]])
+], HymnemarsPage);
+
+//# sourceMappingURL=hymnemars.js.map
 
 /***/ })
 
-},[199]);
+},[201]);
 //# sourceMappingURL=main.js.map

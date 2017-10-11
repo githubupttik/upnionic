@@ -25703,6 +25703,42 @@ ion-navbar.toolbar {
   background-color: white;
 }
 
+page-fakultasprodi .accordion-list {
+  background: #f4f4f4;
+  height: 100%;
+  width: 85vw !important;
+}
+
+page-fakultasprodi .section {
+  background: #fff;
+  color: #000;
+  margin-bottom: 4px;
+}
+
+page-fakultasprodi .section-active {
+  background: #ffc400;
+  color: #fff;
+}
+
+page-fakultasprodi .child {
+  background: #e8e7e6;
+  color: #000;
+  margin-bottom: 4px;
+}
+
+page-fakultasprodi .child-item {
+  background: #f3f2f1;
+  padding: 10px;
+}
+
+page-fakultasprodi .label {
+  margin: 0px;
+}
+
+page-fakultasprodi .list {
+  margin-bottom: 4px;
+}
+
 .img-size {
   width: 100vw !important;
   height: 100vw !important;

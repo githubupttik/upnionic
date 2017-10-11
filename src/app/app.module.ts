@@ -8,6 +8,7 @@ import { ListPage } from '../pages/list/list';
 import { AboutPage } from '../pages/about/about';
 import { BelanegaraPage } from '../pages/belanegara/belanegara';
 import { HymnemarsPage } from '../pages/hymnemars/hymnemars';
+import { FakultasprodiPage } from '../pages/fakultasprodi/fakultasprodi';
 import { TabsAboutPage } from '../pages/tabsabout/tabsabout';
 import { TabsAkademikPage } from '../pages/tabsakademik/tabsakademik';
 
@@ -15,6 +16,7 @@ import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 import { InAppBrowser } from '@ionic-native/in-app-browser';
 import { ParallaxHeader } from '../directives/parallax-header/parallax-header';
+import { HttpModule } from '@angular/http';
 
 
 @NgModule({
@@ -26,11 +28,13 @@ import { ParallaxHeader } from '../directives/parallax-header/parallax-header';
     TabsAboutPage,
     TabsAkademikPage,
     BelanegaraPage,
-    HymnemarsPage,    
+    HymnemarsPage,
+    FakultasprodiPage,    
     ParallaxHeader  
     ],
   imports: [
     BrowserModule,
+    HttpModule,
     IonicModule.forRoot(MyApp),
   ],
   bootstrap: [IonicApp],
@@ -41,6 +45,7 @@ import { ParallaxHeader } from '../directives/parallax-header/parallax-header';
     AboutPage,
     BelanegaraPage,
     HymnemarsPage,
+    FakultasprodiPage,
     TabsAboutPage,
     TabsAkademikPage
   ],
