@@ -19,7 +19,7 @@
     <ion-list-header *ngFor="let item of information; let i = index" no-lines no-padding>
       <!-- Toggle Button -->
       <button ion-item (click)="toggleSection(i)" detail-none [ngClass]="{'section-active': item.open, 'section': !item.open}">
-        <ion-icon item-left name="arrow-dropright" *ngIf="!item.open"></ion-icon>
+        <ion-icon item-left name="ios-arrow-dropright" *ngIf="!item.open"></ion-icon>
         <ion-icon item-left name="arrow-dropdown-circle" *ngIf="item.open"></ion-icon>
           {{ item.name }} 
       </button>

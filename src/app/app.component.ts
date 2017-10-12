@@ -7,8 +7,8 @@ import { TabsAboutPage } from '../pages/tabsabout/tabsabout';
 import { TabsAkademikPage } from '../pages/tabsakademik/tabsakademik';
 
 import { HomePage } from '../pages/home/home';
-import { ListPage } from '../pages/list/list';
-import { AboutPage } from '../pages/about/about';
+import { ContactPage } from '../pages/contact/contact';
+import { SarprasPage } from '../pages/sarpras/sarpras';
 
 @Component({
   templateUrl: 'app.html'
@@ -28,8 +28,8 @@ export class MyApp {
       { title: 'Home', component: HomePage },
       { title: 'About', component: TabsAboutPage },
       { title: 'Akademik', component: TabsAkademikPage },
-      { title: 'Sarpras', component: ListPage },
-      { title: 'Contact', component: ListPage }
+      { title: 'Sarpras', component: SarprasPage },
+      { title: 'Kontak', component: ContactPage }
     ];
 
   }

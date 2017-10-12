@@ -1,14 +1,14 @@
-webpackJsonp([9],{
+webpackJsonp([19],{
 
-/***/ 281:
+/***/ 277:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "UptbiroPageModule", function() { return UptbiroPageModule; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "BelanegaraPageModule", function() { return BelanegaraPageModule; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(13);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__uptbiro__ = __webpack_require__(282);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(12);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__belanegara__ = __webpack_require__(103);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -18,25 +18,25 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 
 
 
-var UptbiroPageModule = (function () {
-    function UptbiroPageModule() {
+var BelanegaraPageModule = (function () {
+    function BelanegaraPageModule() {
     }
-    return UptbiroPageModule;
+    return BelanegaraPageModule;
 }());
-UptbiroPageModule = __decorate([
+BelanegaraPageModule = __decorate([
     Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["L" /* NgModule */])({
         declarations: [
-            __WEBPACK_IMPORTED_MODULE_2__uptbiro__["a" /* UptbiroPage */],
+            __WEBPACK_IMPORTED_MODULE_2__belanegara__["a" /* BelanegaraPage */],
         ],
         imports: [
-            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["d" /* IonicPageModule */].forChild(__WEBPACK_IMPORTED_MODULE_2__uptbiro__["a" /* UptbiroPage */]),
+            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["d" /* IonicPageModule */].forChild(__WEBPACK_IMPORTED_MODULE_2__belanegara__["a" /* BelanegaraPage */]),
         ],
     })
-], UptbiroPageModule);
+], BelanegaraPageModule);
 
-//# sourceMappingURL=uptbiro.module.js.map
+//# sourceMappingURL=belanegara.module.js.map
 
 /***/ })
 
 });
-//# sourceMappingURL=9.js.map
+//# sourceMappingURL=19.js.map

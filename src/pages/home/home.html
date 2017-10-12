@@ -14,7 +14,15 @@
 </ion-slide>
 </ion-slides>
 
-<ion-grid>
+<ion-refresher (ionRefresh)="doRefresh($event)">
+	<ion-refresher-content  pullingIcon="arrow-dropdown"
+      pullingText="Pull to refresh"
+      refreshingSpinner="circles"
+      refreshingText="Refreshing...">
+      </ion-refresher-content>
+  </ion-refresher>
+
+	<ion-grid>
   <ion-row>
     <ion-col><div><button ion-button full color="primary" (click)="openSiamik()" >SIAMIK</button></div> </ion-col>
     <ion-col><div><button ion-button full color="secondary" (click)="openSimaba()" >SIMABA</button></div> </ion-col>
@@ -24,6 +32,7 @@
     <ion-col><div><button ion-button full color="danger" (click)="openEjournal()" >E-Journal</button></div> </ion-col>
   </ion-row>
 </ion-grid>
+	
 
 
 <ion-card>

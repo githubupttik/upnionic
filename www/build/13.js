@@ -1,14 +1,14 @@
 webpackJsonp([13],{
 
-/***/ 277:
+/***/ 283:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "HymnemarsPageModule", function() { return HymnemarsPageModule; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "TabsAkademikPageModule", function() { return TabsAkademikPageModule; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(13);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__hymnemars__ = __webpack_require__(105);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(12);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__tabsakademik__ = __webpack_require__(109);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -18,23 +18,23 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 
 
 
-var HymnemarsPageModule = (function () {
-    function HymnemarsPageModule() {
+var TabsAkademikPageModule = (function () {
+    function TabsAkademikPageModule() {
     }
-    return HymnemarsPageModule;
+    return TabsAkademikPageModule;
 }());
-HymnemarsPageModule = __decorate([
+TabsAkademikPageModule = __decorate([
     Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["L" /* NgModule */])({
         declarations: [
-            __WEBPACK_IMPORTED_MODULE_2__hymnemars__["a" /* HymnemarsPage */],
+            __WEBPACK_IMPORTED_MODULE_2__tabsakademik__["a" /* TabsAkademikPage */],
         ],
         imports: [
-            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["d" /* IonicPageModule */].forChild(__WEBPACK_IMPORTED_MODULE_2__hymnemars__["a" /* HymnemarsPage */]),
+            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["d" /* IonicPageModule */].forChild(__WEBPACK_IMPORTED_MODULE_2__tabsakademik__["a" /* TabsAkademikPage */]),
         ],
     })
-], HymnemarsPageModule);
+], TabsAkademikPageModule);
 
-//# sourceMappingURL=hymnemars.module.js.map
+//# sourceMappingURL=tabsakademik.module.js.map
 
 /***/ })
 

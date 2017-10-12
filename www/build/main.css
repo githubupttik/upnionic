@@ -25762,13 +25762,37 @@ page-fakultasprodi .list {
 }
 
 .kalender-size {
-  height: 120vw !important;
+  height: 70vw !important;
   width: 85vw !important;
 }
 
 .main-content {
   padding: 20px;
   background-color: white;
+}
+
+.card-background-page ion-card {
+  position: relative;
+  text-align: center;
+}
+
+.card-background-page .card-title {
+  position: absolute;
+  top: 36%;
+  font-size: 2.0em;
+  width: 100%;
+  font-weight: bold;
+  color: #fff;
+  text-shadow: 2px 2px #000;
+}
+
+.card-background-page .card-subtitle {
+  font-size: 1.0em;
+  position: absolute;
+  top: 52%;
+  width: 100%;
+  color: #fff;
+  text-shadow: 2px 2px #000;
 }
 
 page-fakultasprodi .accordion-list {

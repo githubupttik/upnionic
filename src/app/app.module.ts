@@ -11,6 +11,8 @@ import { HymnemarsPage } from '../pages/hymnemars/hymnemars';
 import { UptbiroPage } from '../pages/uptbiro/uptbiro';
 import { KalenderakademikPage } from '../pages/kalenderakademik/kalenderakademik';
 import { FakultasprodiPage } from '../pages/fakultasprodi/fakultasprodi';
+import { SarprasPage } from '../pages/sarpras/sarpras';
+import { ContactPage } from '../pages/contact/contact';
 import { TabsAboutPage } from '../pages/tabsabout/tabsabout';
 import { TabsAkademikPage } from '../pages/tabsakademik/tabsakademik';
 
@@ -33,7 +35,9 @@ import { HttpModule } from '@angular/http';
     HymnemarsPage,
     FakultasprodiPage,
     KalenderakademikPage,
-    UptbiroPage,    
+    UptbiroPage,  
+    SarprasPage,  
+    ContactPage,
     ParallaxHeader  
     ],
   imports: [
@@ -52,6 +56,8 @@ import { HttpModule } from '@angular/http';
     FakultasprodiPage,
     KalenderakademikPage,
     UptbiroPage,
+    SarprasPage,
+    ContactPage,
     TabsAboutPage,
     TabsAkademikPage
   ],
