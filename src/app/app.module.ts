@@ -8,6 +8,8 @@ import { ListPage } from '../pages/list/list';
 import { AboutPage } from '../pages/about/about';
 import { BelanegaraPage } from '../pages/belanegara/belanegara';
 import { HymnemarsPage } from '../pages/hymnemars/hymnemars';
+import { UptbiroPage } from '../pages/uptbiro/uptbiro';
+import { KalenderakademikPage } from '../pages/kalenderakademik/kalenderakademik';
 import { FakultasprodiPage } from '../pages/fakultasprodi/fakultasprodi';
 import { TabsAboutPage } from '../pages/tabsabout/tabsabout';
 import { TabsAkademikPage } from '../pages/tabsakademik/tabsakademik';
@@ -29,7 +31,9 @@ import { HttpModule } from '@angular/http';
     TabsAkademikPage,
     BelanegaraPage,
     HymnemarsPage,
-    FakultasprodiPage,    
+    FakultasprodiPage,
+    KalenderakademikPage,
+    UptbiroPage,    
     ParallaxHeader  
     ],
   imports: [
@@ -46,6 +50,8 @@ import { HttpModule } from '@angular/http';
     BelanegaraPage,
     HymnemarsPage,
     FakultasprodiPage,
+    KalenderakademikPage,
+    UptbiroPage,
     TabsAboutPage,
     TabsAkademikPage
   ],

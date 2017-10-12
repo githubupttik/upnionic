@@ -12,7 +12,7 @@ import { InAppBrowser } from '@ionic-native/in-app-browser';
 export class FakultasprodiPage {
 information: any[];
   constructor(public navCtrl: NavController, public navParams: NavParams,private http: Http,private iab:InAppBrowser) {
-  let localData = http.get('assets/information.json').map(res => res.json().items);
+  let localData = http.get('assets/fakultasprodi.json').map(res => res.json().items);
     localData.subscribe(data => {
       this.information = data;
     })

@@ -2,8 +2,8 @@ import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 
 import { FakultasprodiPage } from '../fakultasprodi/fakultasprodi';;
-import { HymnemarsPage } from '../hymnemars/hymnemars';
-import { AboutPage } from '../about/about';
+import { KalenderakademikPage } from '../kalenderakademik/kalenderakademik';
+import { UptbiroPage } from '../uptbiro/uptbiro';
 
 @IonicPage()
 @Component({
@@ -13,8 +13,8 @@ import { AboutPage } from '../about/about';
 export class TabsAkademikPage {
 
   tab4Root: any = FakultasprodiPage;
-  tab5Root: any = AboutPage;
-  tab6Root: any = HymnemarsPage;
+  tab5Root: any = KalenderakademikPage;
+  tab6Root: any = UptbiroPage;
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
