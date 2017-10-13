@@ -647,43 +647,43 @@ var HomePage = (function () {
             infiniteScroll.complete();
         }, 500);
     };
-    HomePage.prototype.whatsappShare = function () {
-        this.sharingVar.shareViaWhatsApp("Message via WhatsApp", null /*Image*/, "http://pointdeveloper.com/" /* url */)
+    HomePage.prototype.whatsappShare = function (v) {
+        this.sharingVar.shareViaWhatsApp("From UPN Veteran Jawa Timur" + "-", null /*Image*/, v + " - " + "http://www.upnjatim.ac.id" /* url */)
             .then(function () {
-            alert("Success");
+            alert("Sukses");
         }, function () {
-            alert("failed");
+            alert("Tidak Ada Aplikasi Whatsapp");
         });
     };
     HomePage.prototype.twitterShare = function () {
-        this.sharingVar.shareViaTwitter("Message via Twitter", null /*Image*/, "http://pointdeveloper.com")
+        this.sharingVar.shareViaTwitter("From UPN Veteran Jawa Timur", null /*Image*/, "http://pointdeveloper.com")
             .then(function () {
-            alert("Success");
+            alert("Sukses");
         }, function () {
-            alert("failed");
+            alert("Tidak Ada Aplikasi Twitter");
         });
     };
     HomePage.prototype.facebookShare = function () {
-        this.sharingVar.shareViaFacebook("Message via Twitter", null /*Image*/, "http://pointdeveloper.com")
+        this.sharingVar.shareViaFacebook("From UPN Veteran Jawa Timur", null /*Image*/, "http://pointdeveloper.com")
             .then(function () {
-            alert("Success");
+            alert("Sukses");
         }, function () {
-            alert("failed");
+            alert("Tidak Ada Aplikasi Facebook");
         });
     };
     HomePage.prototype.otherShare = function () {
-        this.sharingVar.share("Genral Share Sheet", null /*Subject*/, null /*File*/, "http://pointdeveloper.com")
+        this.sharingVar.share("From UPN Veteran Jawa Timur", null /*Subject*/, null /*File*/, "http://pointdeveloper.com")
             .then(function () {
-            alert("Success");
+            alert("Sukses");
         }, function () {
-            alert("failed");
+            alert("Gagal");
         });
     };
     return HomePage;
 }());
 HomePage = __decorate([
     Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
-        selector: 'page-home',template:/*ion-inline-start:"/home/puskom/upnionic/src/pages/home/home.html"*/'<ion-header>\n  <ion-navbar>\n    <button ion-button menuToggle>\n      <ion-icon name="menu"></ion-icon><img width="30px" height="auto" src="http://elearning.upnjatim.ac.id/main/default_course_document/images/Logo_Upn_Jatim_Baru.png">\n    </button>\n    <ion-title>UPN "Veteran" Jawa Timur</ion-title>\n  </ion-navbar>\n</ion-header>\n\n<ion-content>\n<ion-slides class="slide-zoom" autoplay="5000" loop="true" speed="3000" pager>\n<ion-slide *ngFor="let slide of slideData">\n      <img class="img-size" src="{{slide.image}}" />\n</ion-slide>\n</ion-slides>\n\n<ion-refresher (ionRefresh)="doRefresh($event)">\n	<ion-refresher-content  pullingIcon="arrow-dropdown"\n      pullingText="Pull to refresh"\n      refreshingSpinner="circles"\n      refreshingText="Refreshing...">\n      </ion-refresher-content>\n  </ion-refresher>\n\n	<ion-grid>\n  <ion-row>\n    <ion-col><div><button ion-button full color="primary" (click)="openSiamik()" >SIAMIK</button></div> </ion-col>\n    <ion-col><div><button ion-button full color="secondary" (click)="openSimaba()" >SIMABA</button></div> </ion-col>\n  </ion-row>\n  <ion-row>\n    <ion-col><div><button ion-button full color="light" (click)="openElearning()" >E-Learning</button></div> </ion-col>\n    <ion-col><div><button ion-button full color="danger" (click)="openEjournal()" >E-Journal</button></div> </ion-col>\n  </ion-row>\n</ion-grid>\n	\n\n\n<ion-card *ngFor="let item of items">\n<ion-item>\n    <ion-avatar item-start>\n      <img src="http://elearning.upnjatim.ac.id/main/default_course_document/images/Logo_Upn_Jatim_Baru.png">\n    </ion-avatar>\n    <h2>{{ item.kategori  }}</h2><p><font style="font-size:12px;color:grey">{{ item.tanggalinput  }}</font></p>\n</ion-item>\n\n  <ion-card-content>\n    <p><font style="font-size:14px;color:black">{{ item.isi   }}.</font></p>\n  </ion-card-content>\n<button ion-button (click)="whatsappShare()">Share on WhatsApp</button>\n  <button ion-button (click)="twitterShare()">Share on Twitter</button>\n  <button ion-button (click)="facebookShare()">Share on Facebook</button>\n  <button ion-button (click)="otherShare()">Share Other</button>\n</ion-card>\n\n<!---\n<ion-infinite-scroll (ionInfinite)="doInfinite($event)">\n   <ion-infinite-scroll-content loadingSpinner="bubbles"\n      loadingText="Loading more data..."></ion-infinite-scroll-content>\n </ion-infinite-scroll>\n-->\n</ion-content>\n'/*ion-inline-end:"/home/puskom/upnionic/src/pages/home/home.html"*/
+        selector: 'page-home',template:/*ion-inline-start:"/home/puskom/upnionic/src/pages/home/home.html"*/'<ion-header>\n  <ion-navbar>\n    <button ion-button menuToggle>\n      <ion-icon name="menu"></ion-icon><img width="30px" height="auto" src="http://elearning.upnjatim.ac.id/main/default_course_document/images/Logo_Upn_Jatim_Baru.png">\n    </button>\n    <ion-title>UPN "Veteran" Jawa Timur</ion-title>\n  </ion-navbar>\n</ion-header>\n\n<ion-content>\n<ion-slides class="slide-zoom" autoplay="5000" loop="true" speed="3000" pager>\n<ion-slide *ngFor="let slide of slideData">\n      <img class="img-size" src="{{slide.image}}" />\n</ion-slide>\n</ion-slides>\n\n<ion-refresher (ionRefresh)="doRefresh($event)">\n	<ion-refresher-content  pullingIcon="arrow-dropdown"\n      pullingText="Pull to refresh"\n      refreshingSpinner="circles"\n      refreshingText="Refreshing...">\n      </ion-refresher-content>\n  </ion-refresher>\n\n	<ion-grid>\n  <ion-row>\n    <ion-col><div><button ion-button full color="primary" (click)="openSiamik()" >SIAMIK</button></div> </ion-col>\n    <ion-col><div><button ion-button full color="secondary" (click)="openSimaba()" >SIMABA</button></div> </ion-col>\n  </ion-row>\n  <ion-row>\n    <ion-col><div><button ion-button full color="light" (click)="openElearning()" >E-Learning</button></div> </ion-col>\n    <ion-col><div><button ion-button full color="danger" (click)="openEjournal()" >E-Journal</button></div> </ion-col>\n  </ion-row>\n</ion-grid>\n	\n\n\n<ion-card *ngFor="let item of items">\n<ion-item>\n    <ion-avatar item-start>\n      <img src="http://elearning.upnjatim.ac.id/main/default_course_document/images/Logo_Upn_Jatim_Baru.png">\n    </ion-avatar>\n    <h2>{{ item.kategori  }}</h2><p><font style="font-size:12px;color:grey">{{ item.tanggalinput  }}</font></p>\n</ion-item>\n\n  <ion-card-content>\n    <p><font style="font-size:14px;color:black">{{ item.isi   }}.</font></p>\n  </ion-card-content>\n<button ion-button (click)="whatsappShare(item.kategori+\': \'+item.isi)">Share on WhatsApp</button>\n  <button ion-button (click)="twitterShare()">Share on Twitter</button>\n  <button ion-button (click)="facebookShare()">Share on Facebook</button>\n  <button ion-button (click)="otherShare()">Share Other</button>\n</ion-card>\n\n<!---\n<ion-infinite-scroll (ionInfinite)="doInfinite($event)">\n   <ion-infinite-scroll-content loadingSpinner="bubbles"\n      loadingText="Loading more data..."></ion-infinite-scroll-content>\n </ion-infinite-scroll>\n-->\n</ion-content>\n'/*ion-inline-end:"/home/puskom/upnionic/src/pages/home/home.html"*/
     }),
     __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* Platform */], __WEBPACK_IMPORTED_MODULE_2__ionic_native_in_app_browser__["a" /* InAppBrowser */], __WEBPACK_IMPORTED_MODULE_3__angular_http__["a" /* Http */], __WEBPACK_IMPORTED_MODULE_5__ionic_native_social_sharing__["a" /* SocialSharing */]])
 ], HomePage);
