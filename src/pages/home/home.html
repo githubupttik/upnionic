@@ -45,11 +45,20 @@
 
   <ion-card-content>
     <p><font style="font-size:14px;color:black">{{ item.isi   }}.</font></p>
+    
+<ion-row>
+    <ion-col>
+      
+    </ion-col>
+    <ion-col>
+      
+    </ion-col>
+    <ion-col center (click)="otherShare(item.kategori+': '+item.isi)" text-center>
+      <ion-icon name="share-alt" ></ion-icon> Share
+    </ion-col>
+  </ion-row>
   </ion-card-content>
-<button ion-button (click)="whatsappShare(item.kategori+': '+item.isi)">Share on WhatsApp</button>
-  <button ion-button (click)="twitterShare(item.kategori+': '+item.isi)">Share on Twitter</button>
-  <button ion-button (click)="facebookShare(item.kategori+': '+item.isi)">Share on Facebook</button>
-  <button ion-button (click)="otherShare(item.kategori+': '+item.isi)">Share Other</button>
+ 
 </ion-card>
 
 <!---

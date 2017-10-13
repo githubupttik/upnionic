@@ -83,36 +83,7 @@ browser.close();
     }, 500);
   }
   
-  whatsappShare(v){
-    this.sharingVar.shareViaWhatsApp("UPN Veteran Jawa Timur"+"-", null /*Image*/,  v+" - "+"http://www.upnjatim.ac.id" /* url */)
-      .then(()=>{
-        alert("Sukses");
-      },
-      ()=>{
-         alert("Tidak Ada Aplikasi Whatsapp")
-      })
-  }
- 
-  twitterShare(v){
-    this.sharingVar.shareViaTwitter("UPN Veteran Jawa Timur",null /*Image*/,v+" - "+"http://www.upnjatim.ac.id")
-    .then(()=>{
-        alert("Sukses");
-      },
-      ()=>{
-         alert("Tidak Ada Aplikasi Twitter")
-      })
-  }
- 
-  facebookShare(v){
-    this.sharingVar.shareViaFacebook("UPN Veteran Jawa Timur",null /*Image*/,v+" - "+"http://www.upnjatim.ac.id")
-    .then(()=>{
-        alert("Sukses");
-      },
-      ()=>{
-         alert("Tidak Ada Aplikasi Facebook")
-      })
-  }
- 
+  
   otherShare(v){
     this.sharingVar.share("UPN Veteran Jawa Timur",null/*Subject*/,null/*File*/,v+" - "+"http://www.upnjatim.ac.id")
     .then(()=>{
