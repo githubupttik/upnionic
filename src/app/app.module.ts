@@ -21,6 +21,7 @@ import { SplashScreen } from '@ionic-native/splash-screen';
 import { InAppBrowser } from '@ionic-native/in-app-browser';
 import { ParallaxHeader } from '../directives/parallax-header/parallax-header';
 import { HttpModule } from '@angular/http';
+import { SocialSharing } from '@ionic-native/social-sharing';
 
 
 @NgModule({
@@ -65,6 +66,7 @@ import { HttpModule } from '@angular/http';
     StatusBar,
     SplashScreen,
     InAppBrowser,
+    SocialSharing,
     {provide: ErrorHandler, useClass: IonicErrorHandler}
   ]
 })

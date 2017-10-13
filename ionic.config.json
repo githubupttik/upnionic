@@ -1,6 +1,6 @@
 {
   "name": "upnionic",
-  "app_id": "",
+  "app_id": "226c0dd2",
   "type": "ionic-angular",
   "integrations": {
     "cordova": {}

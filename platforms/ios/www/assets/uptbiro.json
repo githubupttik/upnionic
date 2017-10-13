@@ -1,0 +1,60 @@
+{
+    "items": [
+        {
+            "name": "Unit Pelayanan Teknis",
+            "children": [
+                {
+                    "name": "UPT-Teknologi Informasi Komunikasi",
+                    "information": "UPT-TIK",
+                    "web": "http://upttik.upnjatim.ac.id"
+                },
+                {
+                    "name": "UPT-Perpustakaan",
+                    "information": "UPT-Perpustakaan",
+                    "web": "http://pustaka.upnjatim.ac.id"
+                },
+                {
+                    "name": "UPT-Pusat Bahasa",
+                    "information": "UPT-Pusbasa",
+                    "web": "http://pusbasa.upnjatim.ac.id"
+                },
+                {
+                    "name": "UPT-Laboratorium Terpadu",
+                    "information": "UPT-Lab. Terpadu",
+                    "web": "http://www.upnjatim.ac.id"
+                },
+                {
+                    "name": "UPT-Pengembangan Karir",
+                    "information": "UPT-Pengembangan Karir",
+                    "web": "http://www.upnjatim.ac.id"
+                }
+            ]
+        },
+        {
+            "name": "Biro Lembaga",
+            "children": [
+                {
+                    "name": "Biro Umum & Keuangan",
+                    "information":"Biro Umum & Keuangan",
+                    "web": "http://www.upnjatim.ac.id"
+                },
+                {
+                    "name": "Biro Kemahasiswaan, Perencanaan & Kerjasama",
+                    "information": "Biro Kemahasiswaan, Perencanaan & Kerjasama",
+                    "web": "http://www.upnjatim.ac.id"
+                },
+                {
+                    "name": "LPPM",
+                    "information": "Lembaga Penelitian & Pengabdian Kepada Masyarakat",
+                    "web": "http://lppm.upnjatim.ac.id"
+                },
+                {
+                    "name": "LP3M",
+                    "information": "LP3M",
+                    "web": "http://lp3m.upnjatim.ac.id"
+                }
+            ]
+        }
+        
+    ]
+}

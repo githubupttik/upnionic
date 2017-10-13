@@ -35,17 +35,27 @@
 	
 
 
-<ion-card>
+<ion-card *ngFor="let item of items">
 <ion-item>
     <ion-avatar item-start>
       <img src="http://elearning.upnjatim.ac.id/main/default_course_document/images/Logo_Upn_Jatim_Baru.png">
     </ion-avatar>
-    <h2>Pengumuman</h2>
+    <h2>{{ item.kategori  }}</h2><p><font style="font-size:12px;color:grey">{{ item.tanggalinput  }}</font></p>
 </ion-item>
 
   <ion-card-content>
-    <p>Wait a minute. Wait a minute, Doc. Uhhh... Are you telling me that you built a time machine... out of a DeLorean?! Whoa. This is heavy.Wait a minute. Wait a minute, Doc. Uhhh... Are you telling me that you built a time machine... out of a DeLorean?! Whoa. This is heavy.Wait a minute. Wait a minute, Doc. Uhhh... Are you telling me that you built a time machine... out of a DeLorean?! Whoa. This is heavy.Wait a minute. Wait a minute, Doc. Uhhh... Are you telling me that you built a time machine... out of a DeLorean?! Whoa. This is heavy.</p>
+    <p><font style="font-size:14px;color:black">{{ item.isi   }}.</font></p>
   </ion-card-content>
-
+<button ion-button (click)="whatsappShare()">Share on WhatsApp</button>
+  <button ion-button (click)="twitterShare()">Share on Twitter</button>
+  <button ion-button (click)="facebookShare()">Share on Facebook</button>
+  <button ion-button (click)="otherShare()">Share Other</button>
 </ion-card>
+
+<!---
+<ion-infinite-scroll (ionInfinite)="doInfinite($event)">
+   <ion-infinite-scroll-content loadingSpinner="bubbles"
+      loadingText="Loading more data..."></ion-infinite-scroll-content>
+ </ion-infinite-scroll>
+-->
 </ion-content>
