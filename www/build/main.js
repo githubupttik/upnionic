@@ -598,7 +598,7 @@ var HomePage = (function () {
     };
     HomePage.prototype.load2 = function () {
         var _this = this;
-        this.http.get('http://17.17.17.13/upnionic/slider.php')
+        this.http.get('http://upttik.upnjatim.ac.id/asset/ionic/slider.php')
             .map(function (res) { return res.json(); })
             .subscribe(function (data2) {
             _this.aseks = data2;
@@ -606,7 +606,7 @@ var HomePage = (function () {
     };
     HomePage.prototype.load = function () {
         var _this = this;
-        this.http.get('http://17.17.17.13/upnionic/retrieve-data.php')
+        this.http.get('http://upttik.upnjatim.ac.id/asset/ionic/retrieve-data.php')
             .map(function (res) { return res.json(); })
             .subscribe(function (data1) {
             _this.items = data1;

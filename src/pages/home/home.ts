@@ -38,7 +38,7 @@ ionViewWillEnter()
 
 load2()
 {
-        this.http.get('http://17.17.17.13/upnionic/slider.php')
+        this.http.get('http://upttik.upnjatim.ac.id/asset/ionic/slider.php')
       .map(res => res.json())
       .subscribe(data2 =>
       {
@@ -47,7 +47,7 @@ load2()
 }
 load()
    {
-      this.http.get('http://17.17.17.13/upnionic/retrieve-data.php')
+      this.http.get('http://upttik.upnjatim.ac.id/asset/ionic/retrieve-data.php')
       .map(res => res.json())
       .subscribe(data1 =>
       {
