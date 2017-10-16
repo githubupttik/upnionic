@@ -12,7 +12,9 @@ import { SocialSharing } from '@ionic-native/social-sharing';
 export class HomePage {
 
 public items : any = [];
-slideData = [{ image: "http://www.upnjatim.ac.id/images/upnjatim/berita/260917/111.jpg" },{ image: "http://www.upnjatim.ac.id/images/upnjatim/berita/290817/IMG_9599-700x385.jpg" },{ image: "http://www.upnjatim.ac.id/images/upnjatim/berita/210817/IMG_1172.JPG" }]
+public aseks : any = [];
+
+slideData = [{ image: "http://www.upnjatim.ac.id/images/upnjatim/ionic/slider/1.jpg" },{ image: "http://www.upnjatim.ac.id/images/upnjatim/ionic/slider/2.jpg" },{ image: "http://www.upnjatim.ac.id/images/upnjatim/ionic/slider/3.jpg" },{ image: "http://www.upnjatim.ac.id/images/upnjatim/ionic/slider/4.jpg" }]
 slideLength: boolean = false;
 
 
@@ -25,20 +27,31 @@ if(this.slideData.length>0) {
 }
 
 
+
   }
 
 ionViewWillEnter()
    {
       this.load();
+      this.load2();
    }
 
+load2()
+{
+        this.http.get('http://17.17.17.13/upnionic/slider.php')
+      .map(res => res.json())
+      .subscribe(data2 =>
+      {
+         this.aseks = data2;
+      });
+}
 load()
    {
       this.http.get('http://17.17.17.13/upnionic/retrieve-data.php')
       .map(res => res.json())
-      .subscribe(data =>
+      .subscribe(data1 =>
       {
-         this.items = data;
+         this.items = data1;
       });
    }
 
@@ -87,10 +100,10 @@ browser.close();
   otherShare(v){
     this.sharingVar.share("UPN Veteran Jawa Timur",null/*Subject*/,null/*File*/,v+" - "+"http://www.upnjatim.ac.id")
     .then(()=>{
-        alert("Sukses");
+        console.log('Sukses');
       },
       ()=>{
-         alert("Gagal")
+         console.log('Gagal');
       })
  
   }

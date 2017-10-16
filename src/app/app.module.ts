@@ -23,7 +23,6 @@ import { ParallaxHeader } from '../directives/parallax-header/parallax-header';
 import { HttpModule } from '@angular/http';
 import { SocialSharing } from '@ionic-native/social-sharing';
 
-
 @NgModule({
   declarations: [
     MyApp,

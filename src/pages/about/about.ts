@@ -17,7 +17,7 @@ export class AboutPage {
   }
   
 downloadLogo() {
-const browser = this.iab.create('http://elearning.upnjatim.ac.id/main/default_course_document/images/Logo_Upn_Jatim_Baru.png');
+const browser = this.iab.create('http://www.upnjatim.ac.id/images/upnjatim/ionic/logo.png');
 browser.close();
 }  
 

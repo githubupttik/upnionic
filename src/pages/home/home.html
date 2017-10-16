@@ -10,7 +10,7 @@
 <ion-content>
 <ion-slides class="slide-zoom" autoplay="5000" loop="true" speed="3000" pager>
 <ion-slide *ngFor="let slide of slideData">
-      <img class="img-size" src="{{slide.image}}" />
+      <div style="top:12px;z-index:3;position:absolute">{{slide.judul}}</div><img class="img-size" src="{{slide.image}}" />
 </ion-slide>
 </ion-slides>
 
@@ -44,7 +44,7 @@
 </ion-item>
 
   <ion-card-content>
-    <p><font style="font-size:14px;color:black">{{ item.isi   }}.</font></p>
+    <p><font style="font-size:14px;color:black">{{ item.isi   }}. - <a href="{{ item.link  }}">{{ item.link  }}</a></font></p>
     
 <ion-row>
     <ion-col>
@@ -53,7 +53,7 @@
     <ion-col>
       
     </ion-col>
-    <ion-col center (click)="otherShare(item.kategori+': '+item.isi)" text-center>
+    <ion-col center (click)="otherShare(item.kategori+': '+item.isi+'- '+item.link)" text-center>
       <ion-icon name="share-alt" ></ion-icon> Share
     </ion-col>
   </ion-row>
@@ -62,6 +62,18 @@
 </ion-card>
 
 <!---
+<ion-list>
+    <ion-item *ngFor="let asek of aseks" >
+      <ion-avatar item-left>
+        
+      </ion-avatar>
+ 
+       <h2>{{ asek.judul  }}</h2><p><img class="img-size" src="{{asek.image}}" /></p>
+ 
+      </ion-item>
+ 
+  </ion-list>
+
 <ion-infinite-scroll (ionInfinite)="doInfinite($event)">
    <ion-infinite-scroll-content loadingSpinner="bubbles"
       loadingText="Loading more data..."></ion-infinite-scroll-content>
