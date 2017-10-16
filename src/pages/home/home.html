@@ -24,17 +24,15 @@
 
 	<ion-grid>
   <ion-row>
-    <ion-col><div><button ion-button full color="primary" (click)="openSiamik()" >SIAMIK</button></div> </ion-col>
-    <ion-col><div><button ion-button full color="secondary" (click)="openSimaba()" >SIMABA</button></div> </ion-col>
+    <ion-col><div><button ion-button full color="primary" (click)="openSiamik()" ><ion-icon name="bookmark" style="position:absolute;z-index:3;color:orange;font-size:40px;left:10px"></ion-icon>SIAMIK</button></div> </ion-col>
+    <ion-col><div><button ion-button full color="primary" (click)="openSimaba()" ><ion-icon name="bookmark" style="position:absolute;z-index:3;color:orange;font-size:40px;left:10px"></ion-icon>SIMABA</button></div> </ion-col>
   </ion-row>
   <ion-row>
-    <ion-col><div><button ion-button full color="light" (click)="openElearning()" >E-Learning</button></div> </ion-col>
-    <ion-col><div><button ion-button full color="danger" (click)="openEjournal()" >E-Journal</button></div> </ion-col>
+    <ion-col><div><button ion-button full color="primary" (click)="openElearning()" ><ion-icon name="bookmark" style="position:absolute;z-index:3;color:orange;font-size:40px;left:10px"></ion-icon>E-Learning</button></div> </ion-col>
+    <ion-col><div><button ion-button full color="primary" (click)="openEjournal()" ><ion-icon name="bookmark" style="position:absolute;z-index:3;color:orange;font-size:40px;left:10px"></ion-icon>E-Journal</button></div> </ion-col>
   </ion-row>
 </ion-grid>
 	
-
-
 <ion-card *ngFor="let item of items">
 <ion-item>
     <ion-avatar item-start>

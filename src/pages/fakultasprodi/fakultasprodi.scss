@@ -1,6 +1,6 @@
 page-fakultasprodi {
 .accordion-list {
-        background: color($colors, light);
+        background: color($colors, upn);
         height: 100%;
         width: 85vw !important;
     }
@@ -10,17 +10,17 @@ page-fakultasprodi {
         margin-bottom: 4px;
     }
     .section-active {
-        background: #ffc400;
+        background: color($colors, upn);
         color: #fff;
     }
  
     .child {
-        background: #e8e7e6;
+        background: color($colors, upn);
         color: #000;
         margin-bottom: 4px;
     }
     .child-item {
-        background: #f3f2f1;
+        background: color($colors, upn);
         padding: 10px;
     }
     .label {
