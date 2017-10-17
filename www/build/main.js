@@ -4,45 +4,6 @@ webpackJsonp([10],{
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return BelanegaraPage; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(11);
-var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-var __metadata = (this && this.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
-
-
-var BelanegaraPage = (function () {
-    function BelanegaraPage(navCtrl, navParams) {
-        this.navCtrl = navCtrl;
-        this.navParams = navParams;
-    }
-    BelanegaraPage.prototype.ionViewDidLoad = function () {
-        console.log('ionViewDidLoad BelanegaraPage');
-    };
-    return BelanegaraPage;
-}());
-BelanegaraPage = __decorate([
-    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
-        selector: 'page-belanegara',template:/*ion-inline-start:"/home/puskom/upnionic/src/pages/belanegara/belanegara.html"*/'<ion-header>\n  <ion-navbar>\n    <button ion-button menuToggle>\n      <ion-icon name="menu"></ion-icon>\n    </button>\n    <ion-title>Belanegara</ion-title>\n  </ion-navbar>\n</ion-header>\n\n<ion-content parallax-header>\n \n  <div style="background-image: url(\'assets/belanegara.jpg\');" class="header-image"></div>\n \n  <div class="main-content">\n \n<h2>UPN “VETERAN” JAWA TIMUR SEBAGAI KAMPUS BELA NEGARA</h2>\n \n<p style="text-align: justify;"><span style="font-size: 10pt; line-height: 115%; font-family: \'Tahoma\',\'sans-serif\'; background: none repeat scroll 0% 0% white;">Bela Negara adalah sikap dan perilaku warga negara yang dijiwai oleh kecintaan kepada Negara Kesatuan republik Indonesia (NKRI) yang berdasarkan Pancasila dan UUD 1945 dalam menjamin kelangsungan hidup bangsa dan negara. Sebagai Kampus Bela Negara diharapkan akan mampu menghasilkan lulusan sarjana Pionir Pembanguan yang selalu siap mempertahankan NKRI, Pancasila dan UUD 1945 dimanapun dan kapanpun berkerja.</span></p>\n<p><span style="font-size: 10pt; line-height: 115%; font-family: \'Tahoma\',\'sans-serif\'; background: none repeat scroll 0% 0% white;">Nilai-Nilai Bela Negara</span></p>\n<ol>\n<li><span style="font-size: 10pt; line-height: 115%; font-family: \'Tahoma\',\'sans-serif\'; background: none repeat scroll 0% 0% white;">Cinta Tanah Air Republik Indonesia, mengenal dan mencintai wilayah nasional, selalu waspada, siap membela NKRI terhadap segala bentuk ancaman.</span></li>\n<li><span style="font-size: 10pt; line-height: 115%; font-family: \'Tahoma\',\'sans-serif\'; background: none repeat scroll 0% 0% white;">Kesadaran berbangsa dan bernegara Indonesia, selalu membina kerukunan, persatuan dan kesatuan, selalu mengutamakan kepentingan bangsa di atas kepentingan pribadi atau golongan, memahami lambang negara, lagu kebangsaan dan mentaati seluruh perundang-undangan yang berlaku.</span></li>\n<li><span style="font-size: 10pt; line-height: 115%; font-family: \'Tahoma\',\'sans-serif\'; background: none repeat scroll 0% 0% white;">Meyakini kebenaran Pancasila sebagai falsafah dan ideologi negara.</span></li>\n<li><span style="font-size: 10pt; line-height: 115%; font-family: \'Tahoma\',\'sans-serif\'; background: none repeat scroll 0% 0% white;">Rela berkorban bagi bangsa dan negara</span></li>\n<li><span style="font-size: 10pt; line-height: 115%; font-family: \'Tahoma\',\'sans-serif\'; background: none repeat scroll 0% 0% white;">Memiliki kemampuan awal Bela Negara</span></li>\n</ol>\n<p style="text-align: justify;"><span style="font-size: 10pt; line-height: 115%; font-family: \'Tahoma\',\'sans-serif\'; background: none repeat scroll 0% 0% white;">Sebagai Perguruan Tinggi di bawah pembinaan Kementrian Pertahanan UPN Veteran Jawa Timur fungsi strategis dalam menghasilkan lulusan yang memiliki jiwa kejuangan dalam mempertahankan Negara Kesatuan Republik Indonesia (NKRI). Pasal 27 ayart 3 UUD 1945 menyebutkan “setiap warga negara berhak dan wajib ikut serta dalam upaya pembelaan negara”.</span></p>\n<p style="text-align: justify;"><span style="font-size: 10pt; line-height: 115%; font-family: \'Tahoma\',\'sans-serif\'; background: none repeat scroll 0% 0% white;">Kampus Bela Negara adalah salah satu wujud implementasi dari Pasal 27 ayat 3 UUD 1945 tersebut dalam bentuk sistem pertahanan negara untuk menghadapi ancanam non militer. Salah satu bentuk aktual secara umum adalah Pendidikan Bela Negara berupa kegiatan intrakurikuler Mata Kuliah Pembentukan Kepribadian yaitu Pancasila, Pendidikan Kewarganegraan, Bahasa Indonesia dan Widya Mwat Yasa serta kegiatan ektrakurikuler Unit Kegiatan Mahasiswa seperti Resiman Mahasiswa, Mahasiswa Pecinta Alam, Pramuka, Bela Diri Tradisional, Seni Tari Tradisional dan Olah Raga.</span></p>\n<p style="text-align: justify;"><span style="font-size: 10pt; line-height: 115%; font-family: \'Tahoma\',\'sans-serif\'; background: none repeat scroll 0% 0% white;">Secara khusus di UPN Veteran Jawa Timur sedang dirintis Program Studi Bela Negara sebagai suatu wujud nyata menjadi bagian dari Universitas Pertahanan dengan status Perguruan Tinggi Milik Pemerintah di bawah pembinaan Kemetrian Pertahanan.</span></p>\n  </div>\n \n \n</ion-content>\n\n'/*ion-inline-end:"/home/puskom/upnionic/src/pages/belanegara/belanegara.html"*/,
-    }),
-    __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavParams */]])
-], BelanegaraPage);
-
-//# sourceMappingURL=belanegara.js.map
-
-/***/ }),
-
-/***/ 104:
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AboutPage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(11);
@@ -82,6 +43,45 @@ AboutPage = __decorate([
 ], AboutPage);
 
 //# sourceMappingURL=about.js.map
+
+/***/ }),
+
+/***/ 104:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return BelanegaraPage; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(11);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+var BelanegaraPage = (function () {
+    function BelanegaraPage(navCtrl, navParams) {
+        this.navCtrl = navCtrl;
+        this.navParams = navParams;
+    }
+    BelanegaraPage.prototype.ionViewDidLoad = function () {
+        console.log('ionViewDidLoad BelanegaraPage');
+    };
+    return BelanegaraPage;
+}());
+BelanegaraPage = __decorate([
+    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
+        selector: 'page-belanegara',template:/*ion-inline-start:"/home/puskom/upnionic/src/pages/belanegara/belanegara.html"*/'<ion-header>\n  <ion-navbar>\n    <button ion-button menuToggle>\n      <ion-icon name="menu"></ion-icon>\n    </button>\n    <ion-title>Belanegara</ion-title>\n  </ion-navbar>\n</ion-header>\n\n<ion-content parallax-header>\n \n  <div style="background-image: url(\'assets/belanegara.jpg\');" class="header-image"></div>\n \n  <div class="main-content">\n \n<h2>UPN “VETERAN” JAWA TIMUR SEBAGAI KAMPUS BELA NEGARA</h2>\n \n<p style="text-align: justify;"><span style="font-size: 10pt; line-height: 115%; font-family: \'Tahoma\',\'sans-serif\'; background: none repeat scroll 0% 0% white;">Bela Negara adalah sikap dan perilaku warga negara yang dijiwai oleh kecintaan kepada Negara Kesatuan republik Indonesia (NKRI) yang berdasarkan Pancasila dan UUD 1945 dalam menjamin kelangsungan hidup bangsa dan negara. Sebagai Kampus Bela Negara diharapkan akan mampu menghasilkan lulusan sarjana Pionir Pembanguan yang selalu siap mempertahankan NKRI, Pancasila dan UUD 1945 dimanapun dan kapanpun berkerja.</span></p>\n<p><span style="font-size: 10pt; line-height: 115%; font-family: \'Tahoma\',\'sans-serif\'; background: none repeat scroll 0% 0% white;">Nilai-Nilai Bela Negara</span></p>\n<ol>\n<li><span style="font-size: 10pt; line-height: 115%; font-family: \'Tahoma\',\'sans-serif\'; background: none repeat scroll 0% 0% white;">Cinta Tanah Air Republik Indonesia, mengenal dan mencintai wilayah nasional, selalu waspada, siap membela NKRI terhadap segala bentuk ancaman.</span></li>\n<li><span style="font-size: 10pt; line-height: 115%; font-family: \'Tahoma\',\'sans-serif\'; background: none repeat scroll 0% 0% white;">Kesadaran berbangsa dan bernegara Indonesia, selalu membina kerukunan, persatuan dan kesatuan, selalu mengutamakan kepentingan bangsa di atas kepentingan pribadi atau golongan, memahami lambang negara, lagu kebangsaan dan mentaati seluruh perundang-undangan yang berlaku.</span></li>\n<li><span style="font-size: 10pt; line-height: 115%; font-family: \'Tahoma\',\'sans-serif\'; background: none repeat scroll 0% 0% white;">Meyakini kebenaran Pancasila sebagai falsafah dan ideologi negara.</span></li>\n<li><span style="font-size: 10pt; line-height: 115%; font-family: \'Tahoma\',\'sans-serif\'; background: none repeat scroll 0% 0% white;">Rela berkorban bagi bangsa dan negara</span></li>\n<li><span style="font-size: 10pt; line-height: 115%; font-family: \'Tahoma\',\'sans-serif\'; background: none repeat scroll 0% 0% white;">Memiliki kemampuan awal Bela Negara</span></li>\n</ol>\n<p style="text-align: justify;"><span style="font-size: 10pt; line-height: 115%; font-family: \'Tahoma\',\'sans-serif\'; background: none repeat scroll 0% 0% white;">Sebagai Perguruan Tinggi di bawah pembinaan Kementrian Pertahanan UPN Veteran Jawa Timur fungsi strategis dalam menghasilkan lulusan yang memiliki jiwa kejuangan dalam mempertahankan Negara Kesatuan Republik Indonesia (NKRI). Pasal 27 ayart 3 UUD 1945 menyebutkan “setiap warga negara berhak dan wajib ikut serta dalam upaya pembelaan negara”.</span></p>\n<p style="text-align: justify;"><span style="font-size: 10pt; line-height: 115%; font-family: \'Tahoma\',\'sans-serif\'; background: none repeat scroll 0% 0% white;">Kampus Bela Negara adalah salah satu wujud implementasi dari Pasal 27 ayat 3 UUD 1945 tersebut dalam bentuk sistem pertahanan negara untuk menghadapi ancanam non militer. Salah satu bentuk aktual secara umum adalah Pendidikan Bela Negara berupa kegiatan intrakurikuler Mata Kuliah Pembentukan Kepribadian yaitu Pancasila, Pendidikan Kewarganegraan, Bahasa Indonesia dan Widya Mwat Yasa serta kegiatan ektrakurikuler Unit Kegiatan Mahasiswa seperti Resiman Mahasiswa, Mahasiswa Pecinta Alam, Pramuka, Bela Diri Tradisional, Seni Tari Tradisional dan Olah Raga.</span></p>\n<p style="text-align: justify;"><span style="font-size: 10pt; line-height: 115%; font-family: \'Tahoma\',\'sans-serif\'; background: none repeat scroll 0% 0% white;">Secara khusus di UPN Veteran Jawa Timur sedang dirintis Program Studi Bela Negara sebagai suatu wujud nyata menjadi bagian dari Universitas Pertahanan dengan status Perguruan Tinggi Milik Pemerintah di bawah pembinaan Kemetrian Pertahanan.</span></p>\n  </div>\n \n \n</ion-content>\n\n'/*ion-inline-end:"/home/puskom/upnionic/src/pages/belanegara/belanegara.html"*/,
+    }),
+    __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavParams */]])
+], BelanegaraPage);
+
+//# sourceMappingURL=belanegara.js.map
 
 /***/ }),
 
@@ -273,6 +273,54 @@ KalenderakademikPage = __decorate([
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return TabsAboutPage; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(11);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__belanegara_belanegara__ = __webpack_require__(104);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__hymnemars_hymnemars__ = __webpack_require__(107);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__about_about__ = __webpack_require__(103);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+
+
+
+var TabsAboutPage = (function () {
+    function TabsAboutPage(navCtrl, navParams) {
+        this.navCtrl = navCtrl;
+        this.navParams = navParams;
+        this.tab1Root = __WEBPACK_IMPORTED_MODULE_4__about_about__["a" /* AboutPage */];
+        this.tab2Root = __WEBPACK_IMPORTED_MODULE_2__belanegara_belanegara__["a" /* BelanegaraPage */];
+        this.tab3Root = __WEBPACK_IMPORTED_MODULE_3__hymnemars_hymnemars__["a" /* HymnemarsPage */];
+    }
+    TabsAboutPage.prototype.ionViewDidLoad = function () {
+        console.log('ionViewDidLoad TabsAboutPage');
+    };
+    return TabsAboutPage;
+}());
+TabsAboutPage = __decorate([
+    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
+        selector: 'page-tabsabout',template:/*ion-inline-start:"/home/puskom/upnionic/src/pages/tabsabout/tabsabout.html"*/'<ion-tabs>\n\n  <ion-tab [root]="tab1Root" tabTitle="Profil" tabIcon="ios-school"></ion-tab>\n  <ion-tab [root]="tab2Root" tabTitle="Kampus Belanegara" tabIcon="ios-flag"></ion-tab>\n  <ion-tab [root]="tab3Root" tabTitle="Hymne & Mars" tabIcon="ios-musical-notes"></ion-tab>\n</ion-tabs>\n'/*ion-inline-end:"/home/puskom/upnionic/src/pages/tabsabout/tabsabout.html"*/,
+    }),
+    __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavParams */]])
+], TabsAboutPage);
+
+//# sourceMappingURL=tabsabout.js.map
+
+/***/ }),
+
+/***/ 110:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return SarprasPage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(11);
@@ -311,54 +359,6 @@ SarprasPage = __decorate([
 ], SarprasPage);
 
 //# sourceMappingURL=sarpras.js.map
-
-/***/ }),
-
-/***/ 110:
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return TabsAboutPage; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(11);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__belanegara_belanegara__ = __webpack_require__(103);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__hymnemars_hymnemars__ = __webpack_require__(107);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__about_about__ = __webpack_require__(104);
-var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-var __metadata = (this && this.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
-
-
-
-
-
-var TabsAboutPage = (function () {
-    function TabsAboutPage(navCtrl, navParams) {
-        this.navCtrl = navCtrl;
-        this.navParams = navParams;
-        this.tab1Root = __WEBPACK_IMPORTED_MODULE_4__about_about__["a" /* AboutPage */];
-        this.tab2Root = __WEBPACK_IMPORTED_MODULE_2__belanegara_belanegara__["a" /* BelanegaraPage */];
-        this.tab3Root = __WEBPACK_IMPORTED_MODULE_3__hymnemars_hymnemars__["a" /* HymnemarsPage */];
-    }
-    TabsAboutPage.prototype.ionViewDidLoad = function () {
-        console.log('ionViewDidLoad TabsAboutPage');
-    };
-    return TabsAboutPage;
-}());
-TabsAboutPage = __decorate([
-    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
-        selector: 'page-tabsabout',template:/*ion-inline-start:"/home/puskom/upnionic/src/pages/tabsabout/tabsabout.html"*/'<ion-tabs>\n\n  <ion-tab [root]="tab1Root" tabTitle="Profil" tabIcon="ios-school"></ion-tab>\n  <ion-tab [root]="tab2Root" tabTitle="Kampus Belanegara" tabIcon="ios-flag"></ion-tab>\n  <ion-tab [root]="tab3Root" tabTitle="Hymne & Mars" tabIcon="ios-musical-notes"></ion-tab>\n</ion-tabs>\n'/*ion-inline-end:"/home/puskom/upnionic/src/pages/tabsabout/tabsabout.html"*/,
-    }),
-    __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavParams */]])
-], TabsAboutPage);
-
-//# sourceMappingURL=tabsabout.js.map
 
 /***/ }),
 
@@ -493,11 +493,11 @@ webpackEmptyAsyncContext.id = 121;
 
 var map = {
 	"../pages/about/about.module": [
-		279,
+		278,
 		9
 	],
 	"../pages/belanegara/belanegara.module": [
-		278,
+		279,
 		8
 	],
 	"../pages/contact/contact.module": [
@@ -517,11 +517,11 @@ var map = {
 		4
 	],
 	"../pages/sarpras/sarpras.module": [
-		284,
+		285,
 		3
 	],
 	"../pages/tabsabout/tabsabout.module": [
-		285,
+		284,
 		2
 	],
 	"../pages/tabsakademik/tabsakademik.module": [
@@ -694,15 +694,15 @@ Object(__WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__["a" /* pl
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__app_component__ = __webpack_require__(275);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__pages_home_home__ = __webpack_require__(206);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__pages_list_list__ = __webpack_require__(276);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__pages_about_about__ = __webpack_require__(104);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__pages_belanegara_belanegara__ = __webpack_require__(103);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__pages_about_about__ = __webpack_require__(103);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__pages_belanegara_belanegara__ = __webpack_require__(104);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__pages_hymnemars_hymnemars__ = __webpack_require__(107);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__pages_uptbiro_uptbiro__ = __webpack_require__(112);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__pages_kalenderakademik_kalenderakademik__ = __webpack_require__(108);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__pages_fakultasprodi_fakultasprodi__ = __webpack_require__(106);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__pages_sarpras_sarpras__ = __webpack_require__(109);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__pages_sarpras_sarpras__ = __webpack_require__(110);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__pages_contact_contact__ = __webpack_require__(105);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__pages_tabsabout_tabsabout__ = __webpack_require__(110);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__pages_tabsabout_tabsabout__ = __webpack_require__(109);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__pages_tabsakademik_tabsakademik__ = __webpack_require__(111);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_16__ionic_native_status_bar__ = __webpack_require__(204);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_17__ionic_native_splash_screen__ = __webpack_require__(205);
@@ -766,14 +766,14 @@ AppModule = __decorate([
             __WEBPACK_IMPORTED_MODULE_20__angular_http__["b" /* HttpModule */],
             __WEBPACK_IMPORTED_MODULE_2_ionic_angular__["c" /* IonicModule */].forRoot(__WEBPACK_IMPORTED_MODULE_3__app_component__["a" /* MyApp */], {}, {
                 links: [
-                    { loadChildren: '../pages/belanegara/belanegara.module#BelanegaraPageModule', name: 'BelanegaraPage', segment: 'belanegara', priority: 'low', defaultHistory: [] },
                     { loadChildren: '../pages/about/about.module#AboutPageModule', name: 'AboutPage', segment: 'about', priority: 'low', defaultHistory: [] },
+                    { loadChildren: '../pages/belanegara/belanegara.module#BelanegaraPageModule', name: 'BelanegaraPage', segment: 'belanegara', priority: 'low', defaultHistory: [] },
                     { loadChildren: '../pages/contact/contact.module#ContactPageModule', name: 'ContactPage', segment: 'contact', priority: 'low', defaultHistory: [] },
                     { loadChildren: '../pages/fakultasprodi/fakultasprodi.module#FakultasprodiPageModule', name: 'FakultasprodiPage', segment: 'fakultasprodi', priority: 'low', defaultHistory: [] },
                     { loadChildren: '../pages/hymnemars/hymnemars.module#HymnemarsPageModule', name: 'HymnemarsPage', segment: 'hymnemars', priority: 'low', defaultHistory: [] },
                     { loadChildren: '../pages/kalenderakademik/kalenderakademik.module#KalenderakademikPageModule', name: 'KalenderakademikPage', segment: 'kalenderakademik', priority: 'low', defaultHistory: [] },
-                    { loadChildren: '../pages/sarpras/sarpras.module#SarprasPageModule', name: 'SarprasPage', segment: 'sarpras', priority: 'low', defaultHistory: [] },
                     { loadChildren: '../pages/tabsabout/tabsabout.module#TabsAboutPageModule', name: 'TabsAboutPage', segment: 'tabsabout', priority: 'low', defaultHistory: [] },
+                    { loadChildren: '../pages/sarpras/sarpras.module#SarprasPageModule', name: 'SarprasPage', segment: 'sarpras', priority: 'low', defaultHistory: [] },
                     { loadChildren: '../pages/tabsakademik/tabsakademik.module#TabsAkademikPageModule', name: 'TabsAkademikPage', segment: 'tabsakademik', priority: 'low', defaultHistory: [] },
                     { loadChildren: '../pages/uptbiro/uptbiro.module#UptbiroPageModule', name: 'UptbiroPage', segment: 'uptbiro', priority: 'low', defaultHistory: [] }
                 ]
@@ -818,11 +818,11 @@ AppModule = __decorate([
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(11);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ionic_native_status_bar__ = __webpack_require__(204);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ionic_native_splash_screen__ = __webpack_require__(205);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__pages_tabsabout_tabsabout__ = __webpack_require__(110);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__pages_tabsabout_tabsabout__ = __webpack_require__(109);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__pages_tabsakademik_tabsakademik__ = __webpack_require__(111);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__pages_home_home__ = __webpack_require__(206);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__pages_contact_contact__ = __webpack_require__(105);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__pages_sarpras_sarpras__ = __webpack_require__(109);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__pages_sarpras_sarpras__ = __webpack_require__(110);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
