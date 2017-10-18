@@ -18,7 +18,7 @@ export class AboutPage {
   
 downloadLogo() {
 const browser = this.iab.create('http://www.upnjatim.ac.id/images/upnjatim/ionic/logo.png');
-browser.close();
+
 }  
 
 }

@@ -14,7 +14,7 @@ export class KalenderakademikPage {
 
  downloadKalender() {
 const browser = this.iab.create('http://www.upnjatim.ac.id/images/upnjatim/documents/KALENDER_AKADEMIK.pdf');
-browser.close();
+
 }  
 
 }

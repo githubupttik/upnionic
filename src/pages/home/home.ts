@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { NavController,Platform, NavParams } from 'ionic-angular';
+import { LoadingController,NavController,Platform, NavParams } from 'ionic-angular';
 import { InAppBrowser } from '@ionic-native/in-app-browser';
 import { Http } from '@angular/http';
 import 'rxjs/add/operator/map';
@@ -18,7 +18,7 @@ slideData = [{ image: "http://www.upnjatim.ac.id/images/upnjatim/ionic/slider/1.
 slideLength: boolean = false;
 
 
- constructor(public navCtrl: NavController,public platform: Platform,private iab: InAppBrowser,public http   : Http,private sharingVar: SocialSharing) {
+ constructor(public loading: LoadingController,public navCtrl: NavController,public platform: Platform,private iab: InAppBrowser,public http   : Http,private sharingVar: SocialSharing) {
  
   this.platform = platform;
  
@@ -33,8 +33,7 @@ if(this.slideData.length>0) {
 ionViewWillEnter()
    {
       this.load();
-      this.load2();
-   }
+     }
 
 load2()
 {
@@ -47,30 +46,38 @@ load2()
 }
 load()
    {
-      this.http.get('http://upttik.upnjatim.ac.id/asset/ionic/retrieve-data.php')
+      let loader = this.loading.create({
+    content: 'Mengambil Data...',
+  });
+
+  loader.present().then(() => {
+    this.http.get('http://upttik.upnjatim.ac.id/asset/ionic/retrieve-data.php')
       .map(res => res.json())
       .subscribe(data1 =>
       {
          this.items = data1;
+          loader.dismiss();
       });
+   
+  });
    }
 
 openSiamik() {
 const browser = this.iab.create('https://siamik.upnjatim.ac.id/');
-browser.close();
+
 }    
 
 openSimaba() {
 const browser = this.iab.create('http://simaba.upnjatim.ac.id/');
-browser.close();
+
 }  
 openElearning() {
 const browser = this.iab.create('http://elearning.upnjatim.ac.id/');
-browser.close();
+
 }  
 openEjournal() {
 const browser = this.iab.create('http://ejournal.upnjatim.ac.id/');
-browser.close();
+
 }  
 
  doRefresh(refresher) {

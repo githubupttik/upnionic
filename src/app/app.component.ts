@@ -22,7 +22,11 @@ export class MyApp {
 
   constructor(public platform: Platform, public statusBar: StatusBar, public splashScreen: SplashScreen) {
     this.initializeApp();
+// let status bar overlay webview
+//this.statusBar.overlaysWebView(true);
 
+// set status bar to white
+this.statusBar.backgroundColorByHexString('#27850d');
     // used for an example of ngFor and navigation
     this.pages = [
       { title: 'Home', component: HomePage },
