@@ -27,12 +27,12 @@ if(this.slideData.length>0) {
 }
 
 
-
   }
 
 ionViewWillEnter()
    {
       this.load();
+         
      }
 
 load2()
@@ -44,6 +44,7 @@ load2()
          this.aseks = data2;
       });
 }
+
 load()
    {
       let loader = this.loading.create({
@@ -51,7 +52,8 @@ load()
   });
 
   loader.present().then(() => {
-    this.http.get('http://upttik.upnjatim.ac.id/asset/ionic/retrieve-data.php')
+    this.load2(); 
+this.http.get('http://upttik.upnjatim.ac.id/asset/ionic/retrieve-data.php')
       .map(res => res.json())
       .subscribe(data1 =>
       {
@@ -87,7 +89,7 @@ const browser = this.iab.create('http://ejournal.upnjatim.ac.id/');
       console.log('Async operation has ended');
       this.load();
       refresher.complete();
-    }, 2000);
+    }, 500);
   }
   
   doInfinite(infiniteScroll) {

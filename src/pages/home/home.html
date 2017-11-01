@@ -8,9 +8,9 @@
 </ion-header>
 
 <ion-content>
-<ion-slides class="slide-zoom" autoplay="5000" loop="true" speed="3000" pager>
-<ion-slide *ngFor="let slide of slideData">
-      <div style="top:12px;z-index:3;position:absolute">{{slide.judul}}</div><img class="img-size" src="{{slide.image}}" />
+<ion-slides *ngIf="aseks && aseks.length" autoplay="4000" class="slide-zoom" loop="true" speed="3000" pager>
+<ion-slide *ngFor="let asek of aseks">
+      <div style="left:10px;bottom:20px;z-index:3;position:absolute;background-color:green;width:97%;height:25px;"></div><div style="left:15px;bottom:20px;z-index:3;position:absolute;color:white">{{asek.judul}}</div><img class="img-size" src="{{asek.image}}" />
 </ion-slide>
 </ion-slides>
 

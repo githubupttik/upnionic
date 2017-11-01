@@ -30,9 +30,6 @@
         },
         "ionic-plugin-keyboard": {
             "PACKAGE_NAME": "io.upn.jatim"
-        },
-        "mx.ferreyra.callnumber": {
-            "PACKAGE_NAME": "com.upnjatim.home"
         }
     },
     "dependent_plugins": {

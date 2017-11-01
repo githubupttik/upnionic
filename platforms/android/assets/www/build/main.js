@@ -88,6 +88,42 @@ BelanegaraPage = __decorate([
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ContactPage; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(11);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+var ContactPage = (function () {
+    function ContactPage(navCtrl, navParams) {
+        this.navCtrl = navCtrl;
+        this.navParams = navParams;
+    }
+    return ContactPage;
+}());
+ContactPage = __decorate([
+    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
+        selector: 'page-contact',template:/*ion-inline-start:"/home/puskom/upnionic/src/pages/contact/contact.html"*/'<ion-header>\n  <ion-navbar>\n    <button ion-button menuToggle>\n      <ion-icon name="menu"></ion-icon>\n    </button>\n    <ion-title>Kontak</ion-title>\n  </ion-navbar>\n</ion-header>\n\n<ion-content parallax-header>\n \n  <div class="header-image"><iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15828.735429245162!2d112.7899878!3d-7.3332379!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb26589947991eea1!2sNational+Development+University+%22Veteran%22+East+Java!5e0!3m2!1sen!2s!4v1508125346506" width="100%" height="200px" frameborder="0" style="border:0" allowfullscreen></iframe></div>\n \n  <div class="main-content">\n \n<h2>Informasi</h2>\n<p>Jl.Raya Rungkut Madya, Gunung Anyar, Surabaya</p>\n<p>Telp : +62 (031) 870 6369</p>\n<p>Fax. : +62 (031) 870 6372</p>\n<p>humas@upnjatim.ac.id</p>\n</div>\n\n<ion-fab top right edge>\n    <button ion-fab mini color="upn"><ion-icon name="add"></ion-icon></button>\n    <ion-fab-list>\n      <a href="tel:+62318706369"><button ion-fab color="upn"><ion-icon name="call"></ion-icon></button></a>\n      <a href="mailto:humas@upnjatim.ac.id"><button ion-fab color="upn"><ion-icon name="mail"></ion-icon></button></a>\n\n    </ion-fab-list>\n  </ion-fab>\n \n</ion-content>\n'/*ion-inline-end:"/home/puskom/upnionic/src/pages/contact/contact.html"*/,
+    }),
+    __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* NavParams */]])
+], ContactPage);
+
+//# sourceMappingURL=contact.js.map
+
+/***/ }),
+
+/***/ 106:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return FakultasprodiPage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(11);
@@ -144,85 +180,7 @@ FakultasprodiPage = __decorate([
 
 /***/ }),
 
-/***/ 106:
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ContactPage; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(11);
-var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-var __metadata = (this && this.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
-
-
-var ContactPage = (function () {
-    function ContactPage(navCtrl, navParams) {
-        this.navCtrl = navCtrl;
-        this.navParams = navParams;
-    }
-    return ContactPage;
-}());
-ContactPage = __decorate([
-    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
-        selector: 'page-contact',template:/*ion-inline-start:"/home/puskom/upnionic/src/pages/contact/contact.html"*/'<ion-header>\n  <ion-navbar>\n    <button ion-button menuToggle>\n      <ion-icon name="menu"></ion-icon>\n    </button>\n    <ion-title>Kontak</ion-title>\n  </ion-navbar>\n</ion-header>\n\n<ion-content parallax-header>\n \n  <div class="header-image"><iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15828.735429245162!2d112.7899878!3d-7.3332379!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb26589947991eea1!2sNational+Development+University+%22Veteran%22+East+Java!5e0!3m2!1sen!2s!4v1508125346506" width="100%" height="200px" frameborder="0" style="border:0" allowfullscreen></iframe></div>\n \n  <div class="main-content">\n \n<h2>Informasi</h2>\n<p>Jl.Raya Rungkut Madya, Gunung Anyar, Surabaya</p>\n<p>Telp : +62 (031) 870 6369</p>\n<p>Fax. : +62 (031) 870 6372</p>\n<p>humas@upnjatim.ac.id</p>\n</div>\n\n<ion-fab top right edge>\n    <button ion-fab mini color="upn"><ion-icon name="add"></ion-icon></button>\n    <ion-fab-list>\n      <a href="tel:+62318706369"><button ion-fab color="upn"><ion-icon name="call"></ion-icon></button></a>\n      <a href="mailto:humas@upnjatim.ac.id"><button ion-fab color="upn"><ion-icon name="mail"></ion-icon></button></a>\n\n    </ion-fab-list>\n  </ion-fab>\n \n</ion-content>\n'/*ion-inline-end:"/home/puskom/upnionic/src/pages/contact/contact.html"*/,
-    }),
-    __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* NavParams */]])
-], ContactPage);
-
-//# sourceMappingURL=contact.js.map
-
-/***/ }),
-
 /***/ 107:
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return KalenderakademikPage; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(11);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ionic_native_in_app_browser__ = __webpack_require__(32);
-var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-var __metadata = (this && this.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
-
-
-
-var KalenderakademikPage = (function () {
-    function KalenderakademikPage(iab, navCtrl, navParams) {
-        this.iab = iab;
-        this.navCtrl = navCtrl;
-        this.navParams = navParams;
-    }
-    KalenderakademikPage.prototype.downloadKalender = function () {
-        var browser = this.iab.create('http://www.upnjatim.ac.id/images/upnjatim/documents/KALENDER_AKADEMIK.pdf');
-    };
-    return KalenderakademikPage;
-}());
-KalenderakademikPage = __decorate([
-    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
-        selector: 'page-kalenderakademik',template:/*ion-inline-start:"/home/puskom/upnionic/src/pages/kalenderakademik/kalenderakademik.html"*/'<ion-header>\n  <ion-navbar>\n    <button ion-button menuToggle>\n      <ion-icon name="menu"></ion-icon>\n    </button>\n    <ion-title>Kalender Akademik</ion-title>\n  </ion-navbar>\n</ion-header>\n\n<ion-content >\n \n \n  <div class="main-content">\n \n<h2></h2>\n \n<img class="kalender-size" src="http://www.upnjatim.ac.id/images/upnjatim/documents/KalenderAkademik1.jpeg"><img class="kalender-size" src="http://www.upnjatim.ac.id/images/upnjatim/documents/KalenderAkademik2.jpeg"><a href="http://www.upnjatim.ac.id/images/upnjatim/documents/KALENDER_AKADEMIK.pdf"><button ion-button full color="upn"  >Download</button></a>\n  </div>\n \n \n</ion-content>\n\n'/*ion-inline-end:"/home/puskom/upnionic/src/pages/kalenderakademik/kalenderakademik.html"*/,
-    }),
-    __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_2__ionic_native_in_app_browser__["a" /* InAppBrowser */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* NavParams */]])
-], KalenderakademikPage);
-
-//# sourceMappingURL=kalenderakademik.js.map
-
-/***/ }),
-
-/***/ 108:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -264,6 +222,48 @@ HymnemarsPage = __decorate([
 ], HymnemarsPage);
 
 //# sourceMappingURL=hymnemars.js.map
+
+/***/ }),
+
+/***/ 108:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return KalenderakademikPage; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(11);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ionic_native_in_app_browser__ = __webpack_require__(32);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+
+var KalenderakademikPage = (function () {
+    function KalenderakademikPage(iab, navCtrl, navParams) {
+        this.iab = iab;
+        this.navCtrl = navCtrl;
+        this.navParams = navParams;
+    }
+    KalenderakademikPage.prototype.downloadKalender = function () {
+        var browser = this.iab.create('http://www.upnjatim.ac.id/images/upnjatim/documents/KALENDER_AKADEMIK.pdf');
+    };
+    return KalenderakademikPage;
+}());
+KalenderakademikPage = __decorate([
+    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
+        selector: 'page-kalenderakademik',template:/*ion-inline-start:"/home/puskom/upnionic/src/pages/kalenderakademik/kalenderakademik.html"*/'<ion-header>\n  <ion-navbar>\n    <button ion-button menuToggle>\n      <ion-icon name="menu"></ion-icon>\n    </button>\n    <ion-title>Kalender Akademik</ion-title>\n  </ion-navbar>\n</ion-header>\n\n<ion-content >\n \n \n  <div class="main-content">\n \n<h2></h2>\n \n<img class="kalender-size" src="http://www.upnjatim.ac.id/images/upnjatim/documents/KalenderAkademik1.jpeg"><img class="kalender-size" src="http://www.upnjatim.ac.id/images/upnjatim/documents/KalenderAkademik2.jpeg"><a href="http://www.upnjatim.ac.id/images/upnjatim/documents/KALENDER_AKADEMIK.pdf"><button ion-button full color="upn"  >Download</button></a>\n  </div>\n \n \n</ion-content>\n\n'/*ion-inline-end:"/home/puskom/upnionic/src/pages/kalenderakademik/kalenderakademik.html"*/,
+    }),
+    __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_2__ionic_native_in_app_browser__["a" /* InAppBrowser */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* NavParams */]])
+], KalenderakademikPage);
+
+//# sourceMappingURL=kalenderakademik.js.map
 
 /***/ }),
 
@@ -320,7 +320,7 @@ SarprasPage = __decorate([
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(11);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__belanegara_belanegara__ = __webpack_require__(104);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__hymnemars_hymnemars__ = __webpack_require__(108);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__hymnemars_hymnemars__ = __webpack_require__(107);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__about_about__ = __webpack_require__(103);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -367,8 +367,8 @@ TabsAboutPage = __decorate([
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return TabsAkademikPage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(11);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__fakultasprodi_fakultasprodi__ = __webpack_require__(105);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__kalenderakademik_kalenderakademik__ = __webpack_require__(107);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__fakultasprodi_fakultasprodi__ = __webpack_require__(106);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__kalenderakademik_kalenderakademik__ = __webpack_require__(108);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__uptbiro_uptbiro__ = __webpack_require__(112);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -499,19 +499,19 @@ var map = {
 		8
 	],
 	"../pages/contact/contact.module": [
-		281,
+		280,
 		7
 	],
 	"../pages/fakultasprodi/fakultasprodi.module": [
-		280,
+		281,
 		6
 	],
 	"../pages/hymnemars/hymnemars.module": [
-		283,
+		282,
 		5
 	],
 	"../pages/kalenderakademik/kalenderakademik.module": [
-		282,
+		283,
 		4
 	],
 	"../pages/sarpras/sarpras.module": [
@@ -608,6 +608,7 @@ var HomePage = (function () {
             content: 'Mengambil Data...',
         });
         loader.present().then(function () {
+            _this.slideData;
             _this.http.get('http://upttik.upnjatim.ac.id/asset/ionic/retrieve-data.php')
                 .map(function (res) { return res.json(); })
                 .subscribe(function (data1) {
@@ -696,12 +697,12 @@ Object(__WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__["a" /* pl
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__pages_list_list__ = __webpack_require__(276);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__pages_about_about__ = __webpack_require__(103);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__pages_belanegara_belanegara__ = __webpack_require__(104);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__pages_hymnemars_hymnemars__ = __webpack_require__(108);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__pages_hymnemars_hymnemars__ = __webpack_require__(107);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__pages_uptbiro_uptbiro__ = __webpack_require__(112);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__pages_kalenderakademik_kalenderakademik__ = __webpack_require__(107);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__pages_fakultasprodi_fakultasprodi__ = __webpack_require__(105);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__pages_kalenderakademik_kalenderakademik__ = __webpack_require__(108);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__pages_fakultasprodi_fakultasprodi__ = __webpack_require__(106);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__pages_sarpras_sarpras__ = __webpack_require__(109);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__pages_contact_contact__ = __webpack_require__(106);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__pages_contact_contact__ = __webpack_require__(105);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__pages_tabsabout_tabsabout__ = __webpack_require__(110);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__pages_tabsakademik_tabsakademik__ = __webpack_require__(111);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_16__ionic_native_status_bar__ = __webpack_require__(204);
@@ -768,10 +769,10 @@ AppModule = __decorate([
                 links: [
                     { loadChildren: '../pages/about/about.module#AboutPageModule', name: 'AboutPage', segment: 'about', priority: 'low', defaultHistory: [] },
                     { loadChildren: '../pages/belanegara/belanegara.module#BelanegaraPageModule', name: 'BelanegaraPage', segment: 'belanegara', priority: 'low', defaultHistory: [] },
-                    { loadChildren: '../pages/fakultasprodi/fakultasprodi.module#FakultasprodiPageModule', name: 'FakultasprodiPage', segment: 'fakultasprodi', priority: 'low', defaultHistory: [] },
                     { loadChildren: '../pages/contact/contact.module#ContactPageModule', name: 'ContactPage', segment: 'contact', priority: 'low', defaultHistory: [] },
-                    { loadChildren: '../pages/kalenderakademik/kalenderakademik.module#KalenderakademikPageModule', name: 'KalenderakademikPage', segment: 'kalenderakademik', priority: 'low', defaultHistory: [] },
+                    { loadChildren: '../pages/fakultasprodi/fakultasprodi.module#FakultasprodiPageModule', name: 'FakultasprodiPage', segment: 'fakultasprodi', priority: 'low', defaultHistory: [] },
                     { loadChildren: '../pages/hymnemars/hymnemars.module#HymnemarsPageModule', name: 'HymnemarsPage', segment: 'hymnemars', priority: 'low', defaultHistory: [] },
+                    { loadChildren: '../pages/kalenderakademik/kalenderakademik.module#KalenderakademikPageModule', name: 'KalenderakademikPage', segment: 'kalenderakademik', priority: 'low', defaultHistory: [] },
                     { loadChildren: '../pages/sarpras/sarpras.module#SarprasPageModule', name: 'SarprasPage', segment: 'sarpras', priority: 'low', defaultHistory: [] },
                     { loadChildren: '../pages/tabsabout/tabsabout.module#TabsAboutPageModule', name: 'TabsAboutPage', segment: 'tabsabout', priority: 'low', defaultHistory: [] },
                     { loadChildren: '../pages/tabsakademik/tabsakademik.module#TabsAkademikPageModule', name: 'TabsAkademikPage', segment: 'tabsakademik', priority: 'low', defaultHistory: [] },
@@ -821,7 +822,7 @@ AppModule = __decorate([
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__pages_tabsabout_tabsabout__ = __webpack_require__(110);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__pages_tabsakademik_tabsakademik__ = __webpack_require__(111);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__pages_home_home__ = __webpack_require__(206);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__pages_contact_contact__ = __webpack_require__(106);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__pages_contact_contact__ = __webpack_require__(105);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__pages_sarpras_sarpras__ = __webpack_require__(109);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -851,7 +852,7 @@ var MyApp = (function () {
         // let status bar overlay webview
         //this.statusBar.overlaysWebView(true);
         // set status bar to white
-        //this.statusBar.backgroundColorByHexString('#27850d');
+        this.statusBar.backgroundColorByHexString('#27850d');
         // used for an example of ngFor and navigation
         this.pages = [
             { title: 'Home', component: __WEBPACK_IMPORTED_MODULE_6__pages_home_home__["a" /* HomePage */] },
@@ -861,9 +862,6 @@ var MyApp = (function () {
             { title: 'Kontak', component: __WEBPACK_IMPORTED_MODULE_7__pages_contact_contact__["a" /* ContactPage */] }
         ];
     }
-    MyApp.prototype.ionViewWillEnter = function () {
-        this.statusBar.backgroundColorByHexString('#27850d');
-    };
     MyApp.prototype.initializeApp = function () {
         var _this = this;
         this.platform.ready().then(function () {
